@@ -209,7 +209,7 @@ $$\theta(n^2)$$
 The graph describing the Bubble Sort time complexity looks like this:
 
 <center>
-    <img src="../images/img_runtime_bubbleSort.png" alt="Bubble Sort value complexity">
+    <img src="../images/../images/img_runtime_n^2.png" alt="Bubble Sort value complexity">
 </center>
 
 As you can see, the run time increases really fast when the size of the array is increased.
