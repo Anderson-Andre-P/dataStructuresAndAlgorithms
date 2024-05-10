@@ -1,91 +1,74 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
 
-#define GetBits(x, k, j) (x >> k) & ~((~0) << j)
-#define MAXTAM 100000000
-#define BASE 256
-#define M 8
-#define NBITS 32
+#define SIZE 8
 
-typedef int TipoIndice;
-typedef int TipoChave;
-
-typedef struct TipoItem
+void radix_sort(int arr[], int size)
 {
-    TipoChave Chave;
-} TipoItem;
-
-typedef TipoItem TipoVetor[MAXTAM + 1];
-
-TipoVetor A;
-TipoVetor B;
-int C[BASE];
-
-void ContagemInt(TipoItem *A, TipoIndice n, int Pass)
-{
-    int i, j;
-    for (i = 0; i <= BASE - 1; i++)
-        C[i] = 0;
-    for (i = 1; i <= n; i++)
+    int max_val = arr[0];
+    for (int i = 1; i < size; i++)
     {
-        j = GetBits(A[i].Chave, Pass * M, M);
-        C[j] = C[j] + 1;
-    }
-    if (C[0] == n)
-        return;
-    for (i = 1; i <= BASE - 1; i++)
-        C[i] = C[i] + C[i - 1];
-    for (i = n; i > 0; i--)
-    {
-        j = GetBits(A[i].Chave, Pass * M, M);
-        B[C[j]] = A[i];
-        C[j] = C[j] - 1;
-    }
-    for (i = 1; i <= n; i++)
-        A[i] = B[i];
-}
-
-void RadixsortInt(TipoItem *A, TipoIndice n)
-{
-    int i;
-    for (i = 0; i < NBITS / M; i++)
-        ContagemInt(A, n, i);
-}
-
-void Imprime(TipoItem *V, TipoIndice n)
-{
-    int i;
-    for (i = 1; i <= n; i++)
-        printf("%d ", V[i].Chave);
-    printf("\n");
-}
-
-void Testa(TipoItem *V, TipoIndice n)
-{
-    int i;
-    for (i = 2; i <= n; i++)
-    {
-        if (V[i].Chave < V[i - 1].Chave)
+        if (arr[i] > max_val)
         {
-            printf("ERRO: ");
-            Imprime(V, n);
-            return;
+            max_val = arr[i];
         }
     }
-    printf("OK: ");
-    Imprime(V, n);
+
+    int exp = 1;
+    int *radix_array[10];
+    for (int i = 0; i < 10; i++)
+    {
+        radix_array[i] = (int *)malloc(sizeof(int) * size);
+    }
+    int counts[10] = {0};
+
+    while (max_val / exp > 0)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            int radix_index = (arr[i] / exp) % 10;
+            radix_array[radix_index][counts[radix_index]] = arr[i];
+            counts[radix_index]++;
+        }
+
+        int pos = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < counts[i]; j++)
+            {
+                arr[pos] = radix_array[i][j];
+                pos++;
+            }
+            counts[i] = 0;
+        }
+
+        exp *= 10;
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        free(radix_array[i]);
+    }
 }
 
-int main(int argc, char **argv)
+int main()
 {
-    int i, n = 10;
-    for (i = 1; i <= n; i++)
-        A[i].Chave = 1 + rand();
-    printf("Desordenado: ");
-    Imprime(A, n);
-    printf("RadixsortInt ");
-    RadixsortInt(A, n);
-    Testa(A, n);
+    int arr[SIZE] = {170, 45, 75, 90, 802, 24, 2, 66};
+    printf("Original array: ");
+    for (int i = 0; i < SIZE; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    radix_sort(arr, SIZE);
+
+    printf("Sorted array: ");
+    for (int i = 0; i < SIZE; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
     return 0;
 }
