@@ -80,7 +80,7 @@ DSA is fundamental in nearly every part of the software world:
 - Data analysis;
 - Search engines.
 
-## THeory and Terminology
+## Theory and Terminology
 
 As we go along in this file, new theorical concepts and terminology will be needed so that we can better understanding the DSA we will be working on.
 
