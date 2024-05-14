@@ -8,7 +8,8 @@ In this tutorial the last element of the array is chosen to be the pivot element
 
 Then, the QUicksort algorithm foes the same operation recursively on the sub-arrays to the left and right side of the pivot element. This continues until the array is sorted.
 
-> [!TIP] > <b>Recursion</b> is when a function calls itself.
+> [!TIP]
+> Recursion is when a function calls itself.
 > After the Quicksort algorithm has put the pivot element in between a sub-array with lower values on the left side, and a sub-array with higher values on the right side, the algorithm calls itself twice, so that Quicksort runs again for the sub-array on the left side, and for the sub-array on the right side. The Quicksort algorithm continues to call itself until the sub-arrays are too small to be sorted.
 
 The algorithm can be describe like this:
