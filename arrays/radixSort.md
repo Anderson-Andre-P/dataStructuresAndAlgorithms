@@ -1,10 +1,10 @@
 # Radix Sort
 
-O algoritmo Radix Sort classifica uma matriz por dígitos individuais, começando com o dígito menos significativo (o mais à direita).
+O algoritmo Radix Sort classifica um array por dígitos individuais, começando com o dígito menos significativo (o mais à direita).
 
 A raiz (ou base) é o número de fígitos únicos em um sistema numérico. No sistema decimal que normalmente usamos, existem 10 dígitos diferentes de 0 a 9.
 
-Radix Sort usa a base para que os valores decimais sejam colocados em 10 baldes (ou contêineres) diferentes correspondentes ao dígito que está em foco e, em seguida, colocados de volta na matriz antes de passar para o próximo dígito.
+Radix Sort usa a base para que os valores decimais sejam colocados em 10 baldes (ou contêineres) diferentes correspondentes ao dígito que está em foco e, em seguida, colocados de volta na array antes de passar para o próximo dígito.
 
 Radix Sort é um algoritmo não comparativo que funciona apenas com números inteiros não negativos.
 
@@ -13,14 +13,14 @@ O algoritmo Radix Sort pode ser descrito assim:
 ### Como funciona
 
 1. Comece com o dígito menos significativo (digito mais à direita).
-2. Classifique os valores com base no dígito em foco, primeiro colocando os valores no intervalo correto com base no dígito em foco e, em seguida, coloque-os novamente na matriz na ordem correta.
+2. Classifique os valores com base no dígito em foco, primeiro colocando os valores no intervalo correto com base no dígito em foco e, em seguida, coloque-os novamente na array na ordem correta.
 3. Passe para o próximo dígito e classifique novamente, como na etapa acima, até que não haja mais dígitos.
 
 ## Classificação Estável
 
 Radix Sort deve classificar os elementos de forma estável para que o resultado seja classificado corretamente.
 
-Um algoritmo de classificação estável é um algoritmo que mantém a ordem dos elementos com o mesmo valor de antes e depois da classificação. Digamos que temos dois elementos "K" e "L", onde "K" vem antes de "L", e ambos têm o valor "3". Um algoritmo de classificação é considerado estável se o elemento "K" ainda vier antes de "L" após a classificação da matriz.
+Um algoritmo de classificação estável é um algoritmo que mantém a ordem dos elementos com o mesmo valor de antes e depois da classificação. Digamos que temos dois elementos "K" e "L", onde "K" vem antes de "L", e ambos têm o valor "3". Um algoritmo de classificação é considerado estável se o elemento "K" ainda vier antes de "L" após a classificação da array.
 
 Não faz muito sentido falar sobre algoritmos de classificação estáveis para os algoritmos anteriores que examinamos individualmente, pois o resultado seria o mesmo se eles fossem estáveis ou não. Mas é importante para o Radix Sort que a classificação seja feita de forma estável porque os elementos são classificados por apenas um dígito de cada vez.
 
@@ -74,11 +74,11 @@ A classificação está concluída!
 
 ## Execução Manual: O que aconteceu?
 
-Vemos que os valores são movidos do array e colocados no array de base de acordo com a base atual em foco. E então os valores são movidos de volta para a matriz que queremos classificar.
+Vemos que os valores são movidos do array e colocados no array de base de acordo com a base atual em foco. E então os valores são movidos de volta para a array que queremos classificar.
 
-Essa movimentação de valores que queremos classificar e vice-versa deve ser feita tantas vezes quanto o número máximo de dígitos em um valor. Assim, por exemplo, se 437 for o número mais alto na matriz que precisa ser classificado, sabemos que devemos classificar três vezes, uma para cada dígito.
+Essa movimentação de valores que queremos classificar e vice-versa deve ser feita tantas vezes quanto o número máximo de dígitos em um valor. Assim, por exemplo, se 437 for o número mais alto na array que precisa ser classificado, sabemos que devemos classificar três vezes, uma para cada dígito.
 
-Vemos também que a matriz de base precisa ser bidimensional para que haja mais de um valor em uma base ou índice específico.
+Vemos também que a array de base precisa ser bidimensional para que haja mais de um valor em uma base ou índice específico.
 
 E, como mencionado anteriormente, devemos mover os valores entre os dois arrays de uma forma que mantenha a ordem dos valores com a mesma base em foco, para que a classificação seja estável.
 
@@ -86,10 +86,10 @@ E, como mencionado anteriormente, devemos mover os valores entre os dois arrays 
 
 Para implementar o algoritmo Radix Sort, precisamos:
 
-1. Uma matriz com inteiros não negativos que precisa ser classificada.
-2. Uma matriz bidimensional com índice de 0 a 9 para armazenar valores com a base atual em foco.
-3. Um loop que pega valores da matriz não classificada e os coloca na posição correta na matriz de base bidimensional.
-4. Um loop que coloca valores de volta na matriz inicial a partir da matriz raiz.
+1. um array com inteiros não negativos que precisa ser classificada.
+2. um array bidimensional com índice de 0 a 9 para armazenar valores com a base atual em foco.
+3. Um loop que pega valores da array não classificada e os coloca na posição correta na array de base bidimensional.
+4. Um loop que coloca valores de volta na array inicial a partir da array raiz.
 5. Um loop externo que é executado quantas vezes houver dígitos no valor mais alto.
 
 O código resultante fica assim:
