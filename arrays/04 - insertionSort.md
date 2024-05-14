@@ -20,35 +20,35 @@ Before we implement the Insertion Sort algorithm in a programming language, let'
 
 **Step 2:** we can consider the first value as the initial sorted part of the array. If it is just one value, it must be sorted, right?
 
-[<span style="background-color: #FFFF00">7, </span>12, 9, 11, 3]
+[`7`,12, 9, 11, 3]
 
 **Step 3:** The next value 12 should now be moved into the correct position in the sorted part of the array. But 12 is higher than 7, so it is already in the correct position.
 
-[7, <span style="background-color: #FFFF00">12, </span> 9, 11, 3]
+[7, `12`, 9, 11, 3]
 
 **Step 4:** consider the next value 9.
 
-[7, 12, <span style="background-color: #FFFF00">9, </span> 11, 3]
+[7, 12, `9`, 11, 3]
 
 **Step 5:** the value 9 must now be moved into the correct position inside the sorted part of the array, so we move 9 in between 7 and 12.
 
-[7, <span style="background-color: #FFFF00">9, </span> 12, 11, 3]
+[7, `9`, 12, 11, 3]
 
 **Step 6:** the next value is 11.
 
-[7, 9, 12, <span style="background-color: #FFFF00">11, </span> 3]
+[7, 9, 12, `11`, 3]
 
 **Step 7:** we move it in between 9 and 12 in the sorted part of the array.
 
-[7, 9, <span style="background-color: #FFFF00">11, </span>12, 3]
+[7, 9, `11`,12, 3]
 
 **Step 8:** the last value to insert into the correct position is 3.
 
-[7, 9, 11, 12, <span style="background-color: #FFFF00">3</span>]
+[7, 9, 11, 12, `3`]
 
 **Step 9:** we insert 3 in front of all other values because it is the lowest value.
 
-[<span style="background-color: #FFFF00">3, </span> 7, 9, 11, 12]
+[`3`, 7, 9, 11, 12]
 
 ## Manual Run Through: What Happened?
 

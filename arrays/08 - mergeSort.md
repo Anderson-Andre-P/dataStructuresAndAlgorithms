@@ -37,11 +37,11 @@ Vamos tentar fazer a classificação manualmente, apenas para intender como ele 
 
 **Etapa 2:** a divisão do primeiro array foi concluída e agora é hora de mesclar. 8 e 9 são os dois primeiros elementos a serem mesclados. 8 é o valor mais baixo, portanto vem antes de 9 no primeiro sub-array mesclado.
 
-[ 12] [<span style="background-color: #FFFF00">8</span>, <span style="background-color: #FFFF00">9</span>] [ 3, 11, 5, 4]
+[ 12] [`8``,9`] [ 3, 11, 5, 4]
 
 **Etapa 3:** os próximos sub-arrays a serem mesclados são [12] e [8, 9]. Os valores em ambos os arrays são comparados cdesde o início. 8 é menor que 12, então vem primeiro e 9 também é menor que 12.
 
-[ <span style="background-color: #FFFF00">8</span>, <span style="background-color: #FFFF00">9</span>, <span style="background-color: #FFFF00">12</span>] [ 3, 11, 5, 4]
+[ `8`,`9`,`12`] [ 3, 11, 5, 4]
 
 **Etapa 4:** agora o segundo grande sub-array é dividido recursivamente.
 
@@ -59,15 +59,15 @@ Vamos tentar fazer a classificação manualmente, apenas para intender como ele 
 
 **Etapa 6:** começamos a mesclar os sub-arrays [5] e [4]. Comparando os elementos, 4 é menor que 5, então vem antes no sub-array mesclado.
 
-[8, 9, 12] [3] [11] [<span style="background-color: #FFFF00">4</span>, <span style="background-color: #FFFF00">5</span>]
+[8, 9, 12] [3] [11] [`4`, `5`]
 
 **Etapa 7:** agora mesclamos os sub-arrays [3] e [11]. Comparando os elementos, 3 é menor que 11, então vem antes no sub-array mesclado.
 
-[8, 9, 12] [<span style="background-color: #FFFF00">3</span>, <span style="background-color: #FFFF00">11</span>] [4, 5]
+[8, 9, 12] [`3`, `11`] [4, 5]
 
 **Etapa 8:** em seguida, mesclamos os sub-arrays [3, 11] e [4, 5]. Comparando os elementos, 3 é menor que 4, então vem primeiro. Em seguida, 4 é menor que 11, então vem depois de 3. Finalmente, 5 é menor que 11, então vem depois de 4, seguido por 11.
 
-[8, 9, 12] [<span style="background-color: #FFFF00">3</span>, <span style="background-color: #FFFF00">4</span>, <span style="background-color: #FFFF00">5</span>, <span style="background-color: #FFFF00">11</span>]
+[8, 9, 12] [`3`, `4`, `5`,`11`]
 
 **Etapa 9:** agora, os dois grandes sub-arrays [8, 9, 12] e [3, 4, 5, 11] são mesclados. Comparando os elementos:
 
@@ -81,7 +81,7 @@ Vamos tentar fazer a classificação manualmente, apenas para intender como ele 
 
 Assim, temos o array completamente ordenado:
 
-[<span style="background-color: #FFFF00">3</span>, <span style="background-color: #FFFF00">4</span>, <span style="background-color: #FFFF00">5</span>, <span style="background-color: #FFFF00">8</span>, <span style="background-color: #FFFF00">9</span>, <span style="background-color: #FFFF00">11</span>, <span style="background-color: #FFFF00">12</span>]
+[`3`, `4`, `5`, `8`, `9`, `11`, `12`]
 
 O Merge Sort está completo e o array foi ordenado com sucesso.
 

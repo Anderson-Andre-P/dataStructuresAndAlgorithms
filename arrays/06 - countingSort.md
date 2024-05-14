@@ -38,53 +38,53 @@ countingArray = [0, 0, 0, 0]
 
 **Step 3:** now let's start counting. The first element is 2, so we must increment the counting array element at index 2.
 
-myArray = [<span style="background-color: #FFFF00">2, </span>3, 0, 2, 3, 2]
+myArray = [`2`,3, 0, 2, 3, 2]
 
-countingArray = [0, 0, <span style="background-color: #FFFF00">1, </span>0]
+countingArray = [0, 0, `1`,0]
 
 **Step 4:** After counting a value, we can remove it, and count the next value, which is 3.
 
-myArray = [<span style="background-color: #FFFF00">3, </span>0, 2, 3, 2]
+myArray = [`3`,0, 2, 3, 2]
 
-countingArray = [0, 0, 1, <span style="background-color: #FFFF00">1</span>]
+countingArray = [0, 0, 1, `1`]
 
 **Step 5:** The next value we counts is 0, so we increment index 0 in the counting array.
 
-myArray = [<span style="background-color: #FFFF00">0, </span>2, 3, 2]
+myArray = [`0`,2, 3, 2]
 
-countingArray = [<span style="background-color: #FFFF00">1, </span>0, 1, 1]
+countingArray = [`1`,0, 1, 1]
 
 **Step 6:** we continue like this until all values are counted.
 
 myArray = []
 
-countingArray = [<span style="background-color: #FFFF00">1, 0, 3, 2</span>]
+countingArray = [`1`, `0`, `3`, `2`]
 
 **Step 7:** now we will recreate the elements from the initial array, and we will do it so that the elements are ordered lowest to highest.
 
 The first element in the counting array tells us that we have 1 element with value 0. So we push 1 element with value 0 into the array, and we decrease the element at index 0 in the counting array with 1.
 
-myArray = [<span style="background-color: #FFFF00">0</span>]
+myArray = [`0`]
 
-countingArray = [<span style="background-color: #FFFF00">0, </span>0, 3, 2]
+countingArray = [`0`,0, 3, 2]
 
 **Step 8:** from the counting array we see that we do not need to create any elements with value 1.
 
 myArray = [0]
 
-countingArray = [0, <span style="background-color: #FFFF00">0, </span>3, 2]
+countingArray = [0, `0`,3, 2]
 
 **Step 9:** we push 3 elements with value 2 into the end of array. And as we create these elements we also decrease the counting array at index 2.
 
-myArray = [0, <span style="background-color: #FFFF00">2, 2, 2</span>]
+myArray = [0, `2`, `2`, `2`]
 
-countingArray = [0, 0, <span style="background-color: #FFFF00">0, </span>2]
+countingArray = [0, 0, `0`,2]
 
 **Step 10:** at last we must add 2 elements with value 3 at the end of the array.
 
-myArray = [0, 2, 2, 2, <span style="background-color: #FFFF00">3, 3</span>]
+myArray = [0, 2, 2, 2, `3`, `3`]
 
-countingArray = [0, 0, 0, <span style="background-color: #FFFF00">0</span>]
+countingArray = [0, 0, 0, `0`]
 
 Finally! THe array is sorted.
 

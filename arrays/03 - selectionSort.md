@@ -20,31 +20,31 @@ Before we implement the Selection Sort algorithm in a programming language, let'
 
 **Step 2:** go through the array, one value at a time. Which value is the lowest? 3, right?
 
-[7, 12, 9, 11, <span style="background-color: #FFFF00">3</span>]
+[7, 12, 9, 11, `3`]
 
 **Step 3:** Move the lowest value 3 to the front of the array.
 
-[<span style="background-color: #FFFF00">3, </span>7, 12, 9, 11]
+[`3`, 7, 12, 9, 11]
 
 **Step 4:** look through the rest of the values, startinh with 7. 7 is the lowest value, and already at the front of the array, so we don't need to move it.
 
-[3, <span style="background-color: #FFFF00">7, </span>12, 9, 11]
+[3, `7`,12, 9, 11]
 
 **Step 5:** look through the rest of the array: 12, 9 and 11. 9 is the lowest value.
 
-[3, 7, 12, <span style="background-color: #FFFF00">9, </span>11]
+[3, 7, 12, `9`,11]
 
 **Step 6:** move 9 to the front.
 
-[3, 7, <span style="background-color: #FFFF00">9, </span>12, 11]
+[3, 7, `9`,12, 11]
 
 **Step 7:** looking at 12 and 11, 11 is the lowest.
 
-[3, 7, 9, 12, <span style="background-color: #FFFF00">11</span>]
+[3, 7, 9, 12, `11`]
 
 **Step 8:** move it to the front.
 
-[3, 7, 9, <span style="background-color: #FFFF00">11, </span>12]
+[3, 7, 9, `11`,12]
 
 Finally, the array is sorted.
 

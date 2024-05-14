@@ -31,31 +31,31 @@ Before we implement the Quicksort algorithm in a programming language, let's man
 
 **Step 2:** we choose the last value 3 as the pivot element.
 
-[11, 9, 12, 7, <span style="background-color: #FFFF00">3</span>]
+[11, 9, 12, 7, `3`]
 
 **Step 3:** the rest of the values in the array are all lower than 3, an must be on the right side of 3. Swap 3 with 11.
 
-[<span style="background-color: #FFFF00">3, </span>9, 12, 7, <span style="background-color: #FFFF00">11</span>]
+[`3`,9, 12, 7, `11`]
 
 **Step 4:** value 3 is now in the correct position. We need to sort the values to the right of 3. We choose the last value 11 as the new pivot element.
 
-[3, 9, 12, 7, <span style="background-color: #FFFF00">11</span>]
+[3, 9, 12, 7, `11`]
 
 **Step 5:** the value 7 must be to left of pivot value 11, and 12 must be to the right of it. Move 7 and 12.
 
-[3, 9, <span style="background-color: #FFFF00">7, 12, </span>11]
+[3, 9, `7`, `12`,11]
 
 **Step 6:** swap 11 with 12 so that lower values 9 and 7 are on the left side of 11, and 12 is on the right side.
 
-[3, 9, 7, <span style="background-color: #FFFF00">11, 12</span>]
+[3, 9, 7, `11`, `12`]
 
 **Step 7:** 11 and 12 are in the correct positions. We choose 7 as the pivot element in sub-array [9, 7], to the left of 11.
 
-[3, 9, <span style="background-color: #FFFF00">7, </span>11, 12]
+[3, 9, `7`,11, 12]
 
 **Step 8:** we must swap 9 with 7.
 
-[3, <span style="background-color: #FFFF00">7, 9, </span>11, 12]
+[3, `7`, `9`,11, 12]
 
 And now, the array is sorted.
 

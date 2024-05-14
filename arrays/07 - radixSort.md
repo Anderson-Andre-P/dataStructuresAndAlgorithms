@@ -38,7 +38,7 @@ radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
 **Etapa 2:** começamos a classificação concentrando-nos no dígito menos significativo.
 
-myArray = [3<span style="background-color: #FFFF00">3</span>, 4<span style="background-color: #FFFF00">5</span>, 4<span style="background-color: #FFFF00">0</span>, 2<span style="background-color: #FFFF00">5</span>, 1<span style="background-color: #FFFF00">7</span>, 2<span style="background-color: #FFFF00">4</span>]
+myArray = [3`3`, 4`5`, 4`0`, 2`5`, 1`7`, 2`4`]
 
 radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
@@ -46,28 +46,28 @@ radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
 myArray = [ ]
 
-radixArray = [ [4<span style="background-color: #FFFF00">0</span>], [], [], [3<span style="background-color: #FFFF00">3</span>], [2<span style="background-color: #FFFF00">4</span>], [4<span style="background-color: #FFFF00">5</span>, 2<span style="background-color: #FFFF00">5</span>], [], [1<span style="background-color: #FFFF00">7</span>], [], [] ]
+radixArray = [ [4`0`], [], [], [3`3`], [2`4`], [4`5`, 2`5`], [], [1`7`], [], [] ]
 
 **Etapa 4:** movemos os elementos de volta para o array inicial e a classificação agora é feita para o dígito menos significativo. Os elementos são retirados do final do radixArray e colocados no início do myArray.
 
-myArray = [ 4<span style="background-color: #FFFF00">0</span>, 3<span style="background-color: #FFFF00">3</span>, 2<span style="background-color: #FFFF00">4</span>, 4<span style="background-color: #FFFF00">5</span>, 2<span style="background-color: #FFFF00">5</span>, 1<span style="background-color: #FFFF00">7</span> ]
+myArray = [ 4`0`, 3`3`, 2`4`, 4`5`, 2`5`, 1`7` ]
 
 radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
 **Etapa 5:** movemos o foco para o próximo dígito. Observe que os valores 45 e 25 ainda estão na mesma ordem relativa entre si como estavam no início, porque classificamos de maneira estável.
 
-myArray = [ <span style="background-color: #FFFF00">4</span>0, <span style="background-color: #FFFF00">3</span>3, <span style="background-color: #FFFF00">2</span>4, <span style="background-color: #FFFF00">4</span>5, <span style="background-color: #FFFF00">2</span>5, <span style="background-color: #FFFF00">1</span>7 ]
+myArray = [ `4`0, `3`3, `2`4, `4`5, `2`5, `1`7 ]
 
 radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
 **Etapa 6:** movemos os elementos para o array radiz de acordo com o dígito em foco.
 
 myArray = [ ]
-radixArray = [ [], [<span style="background-color: #FFFF00">1</span>7], [<span style="background-color: #FFFF00">2</span>4, <span style="background-color: #FFFF00">2</span>5], [<span style="background-color: #FFFF00">3</span>3], [<span style="background-color: #FFFF00">4</span>0, <span style="background-color: #FFFF00">4</span>5], [], [], [], [], [] ]
+radixArray = [ [], [`1`7], [`2`4, `2`5], [`3`3], [`4`0, `4`5], [], [], [], [], [] ]
 
 **Etapa 7:** movemos os elementos de volta para o início do myArray, na parte de trás do radixArray.
 
-myArray = [ <span style="background-color: #FFFF00">1</span>7, <span style="background-color: #FFFF00">2</span>4, <span style="background-color: #FFFF00">2</span>5, <span style="background-color: #FFFF00">3</span>3, <span style="background-color: #FFFF00">4</span>0, <span style="background-color: #FFFF00">4</span>5 ]
+myArray = [ `1`7, `2`4, `2`5, `3`3, `4`0, `4`5 ]
 radixArray = [ [], [], [], [], [], [], [], [], [], [] ]
 
 A classificação está concluída!

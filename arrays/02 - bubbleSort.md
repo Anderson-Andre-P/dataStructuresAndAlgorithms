@@ -24,77 +24,77 @@ Before we implement the Bubble Sort algorithm in a programming language, let's m
 
 **Step 2:** we look at the two first values. Does the lowest value come first? Yes, so we don't need to swap them.
 
-[<span style="background-color: #FFFF00">7, 12,</span> 9, 11, 3]
+[`7`, `12`, 9, 11, 3]
 
 **Step 3:** take one step forward and look at values 12 and 9. Does the lowest value come first? No.
 
-[7, <span style="background-color: #FFFF00">12, 9,</span> 11, 3]
+[7, `12`, `9`, 11, 3]
 
 **Step 4:** so we need to swap them so that 9 comes first.
 
-[7, <span style="background-color: #FFFF00">9, 12,</span> 11, 3]
+[7, `9`, `12`, 11, 3]
 
 **Step 5:** taking one step forward, looking at 12 and 11.
 
-[7, 9, <span style="background-color: #FFFF00">12, 11, </span> 3]
+[7, 9, `12`, `11`, 3]
 
 **Step 6:** we must swap so that 11 comes before 12.
 
-[7, 9, <span style="background-color: #FFFF00">11, 12, </span> 3]
+[7, 9, `11`, `12`, 3]
 
 **Step 7:** looking at 12 and 3, do we need to swap them? Yes.
 
-[7, 9, 11, <span style="background-color: #FFFF00">12, 3</span>]
+[7, 9, 11, `12`, `3`]
 
 **Step 8:** Swapping 12 and 3, so that 3 comes first.
 
-[7, 9, 11, <span style="background-color: #FFFF00">3, 12</span>]
+[7, 9, 11, `3`, `12`]
 
 **Step 8:** Swapping 12 and 3, so that 3 comes first.
 
-[7, 9, 11, <span style="background-color: #FFFF00">3, 12</span>]
+[7, 9, 11, `3`, `12`]
 
 **Step 9:** Continuing with the next iteration, we start again from the beginning.
 
-[<span style="background-color: #FFFF00">7, 9,</span> 11, 3, 12]
+[`7`, `9`, 11, 3, 12]
 
-[7, <span style="background-color: #FFFF00">9, 11,</span> 3, 12]
+[7, `9`, `11`, 3, 12]
 
-[7, 9, <span style="background-color: #FFFF00">11, 3,</span> 12]
+[7, 9, `11`, `3`, 12]
 
-[7, 9, <span style="background-color: #FFFF00">3, 11,</span> 12]
+[7, 9, `3`, `11`, 12]
 
-[<span style="background-color: #FFFF00">7, 9,</span> 3, 11, 12]
+[`7`, `9`, 3, 11, 12]
 
 **Step 10:** Another iteration.
 
-[7, <span style="background-color: #FFFF00">9, 3,</span> 11, 12]
+[7, `9`, `3`, 11, 12]
 
-[7, 3, <span style="background-color: #FFFF00">9, 11,</span> 12]
+[7, 3, `9`, `11`, 12]
 
-[7, 3, 9, <span style="background-color: #FFFF00">11, 12</span>]
+[7, 3, 9, `11`, `12`]
 
 **Step 11:** One more iteration.
 
-[<span style="background-color: #FFFF00">7, 3,</span> 9, 11, 12]
+[`7`, `3`, 9, 11, 12]
 
-[3, <span style="background-color: #FFFF00">7, 9,</span> 11, 12]
+[3, `7`, `9`, 11, 12]
 
-[3, 7, <span style="background-color: #FFFF00">9, 11,</span> 12]
+[3, 7, `9`, `11`, 12]
 
-[3, 7, 9, <span style="background-color: #FFFF00">11, 12</span>]
+[3, 7, 9, `11`, `12`]
 
 **Step 12:** Final iteration.
 
-[<span style="background-color: #FFFF00">3, 7,</span> 9, 11, 12]
+[`3`, `7`, 9, 11, 12]
 
-[3, <span style="background-color: #FFFF00">7, 9,</span> 11, 12]
+[3, `7`, `9`, 11, 12]
 
-[3, 7, <span style="background-color: #FFFF00">9, 11,</span> 12]
+[3, 7, `9`, `11`, 12]
 
-[3, 7, 9, <span style="background-color: #FFFF00">11, 12</span>]
+[3, 7, 9, `11`, `12`]
 
-[3, 7, 9, 11, <span style="background-color: #FFFF00">12</span>]
+[3, 7, 9, 11, `12`]
 
 **Sorted array:** [3, 7, 9, 11, 12]
 
