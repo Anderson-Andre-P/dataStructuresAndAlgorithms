@@ -181,5 +181,5 @@ O caso médio ou comum, seria talvez se o número de dígitos $k$ fosse algo com
 As diferentes complexidades de tempo possíveis para Radix Sort estão na imagem abaixo.
 
 <center>
-    <img src="../images/img_runtime_radixsort.png" alt="Runtime Radix Sort">
+    <img src="../images/arrays/img_runtime_radixsort.png" alt="Runtime Radix Sort">
 </center>

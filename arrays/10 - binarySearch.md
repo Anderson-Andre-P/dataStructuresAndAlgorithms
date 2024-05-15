@@ -123,5 +123,5 @@ A complexidade de tempo para a pesquisa binária é de: $$O( \log_{2} n )$$
 Se desenharmos quanto tempo a Busca Binária precisa para encontrar um valor em um array de $n$ valores, em comparação com a Busca Linear, obtemos este gráfico:
 
 <center>
-    <img src="../images/img_binarysearch_timecomplexity.png" alt="Runtime Binary Search versus Linear Search">
+    <img src="../images/arrays/img_binarysearch_timecomplexity.png" alt="Runtime Binary Search versus Linear Search">
 </center>

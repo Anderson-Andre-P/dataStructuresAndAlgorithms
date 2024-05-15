@@ -18,7 +18,7 @@ A divisão e construção do array para classificá-lo é feita recursivamente.
 A ilustração abaixo mostra como o Merge Sort funciona de uma perspectiva diferente. O array é dividido em pedaços cada vez menores até ser mesclado novamente. E à medida que a fusão aocntece, os valores de cada sub-array são comparados para que o valor mais baixo venha primeiro.
 
 <center>
-    <img src="../images/img_mergesort_long.png" alt="Funcionamento do Merge Sort">
+    <img src="../images/arrays/img_mergesort_long.png" alt="Funcionamento do Merge Sort">
 </center>
 
 ## Execução Manual
@@ -274,5 +274,5 @@ A complexidade do tempo é praticamente a mesma para diferentes tipos de arrays.
 A imagem abaixo mostra a complexidade de tempo para Merge Sort.
 
 <center>
-    <img src="../images/img_runtime_mergesort.png" alt="Runtime Merge Sort">
+    <img src="../images/arrays/img_runtime_mergesort.png" alt="Runtime Merge Sort">
 </center>

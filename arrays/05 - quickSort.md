@@ -139,7 +139,7 @@ But on average, the time complexity for Quicksort is actually just $\theta(n \lo
 Below you can see the significant improvement in time complexity for Quicksort in an average scenario $\theta(n \log n)$, compared to the previous sorting algorithms Bubble, Selection an Insertion Sort with time complexity $\theta(n^2)$:
 
 <center>
-    <img src="../images/img_runtime_nlogn.png" alt="Runtime Quick Sort">
+    <img src="../images/arrays/img_runtime_nlogn.png" alt="Runtime Quick Sort">
 </center>
 
 The recursion part of the Quicksort algorithm is actually a reason why the average sorting scenario is so fast, because for good picks of the pivot element, the array will be split in half somewhat evenly each time the algorithm calls itself. So the number of recursive calls do not double, even if the number of values $n$ double.

@@ -98,7 +98,7 @@ int main() {
 When exploring algorithms, we often look at how long time an algorithm takes to run relative to the size of the data set.
 
 <center>
-    <img src="../images/img_runtime_findlowest.png" alt="Lowest value complexity">
+    <img src="../images/arrays/img_runtime_findlowest.png" alt="Lowest value complexity">
 </center>
 
 In the example above, the time the algorithms needs to run is proportional, or linear, to the size of the data set. This is because the algorithm must visit every array element one time to find the lowest value. The loop must run 5 times since there are 5 values in the array. And if the array had 1000 values, the loop would have to run 1000 times.

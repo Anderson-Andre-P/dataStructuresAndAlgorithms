@@ -110,13 +110,13 @@ In the code above, the lowest value element is removed, and them inserted in fro
 Each time the next lowest value array element is removed, all following elements must be shifted one place down to make uo for the removal.
 
 <center>
-    <img src="../images/img_array_removed_shifting_2.png" alt="Array removed shifting">
+    <img src="../images/arrays/img_array_removed_shifting_2.png" alt="Array removed shifting">
 </center>
 
 These shifting operation takes a lot of time, and we are not even done yet! After the lowest value (5) is found and removed, it is inserted at the start of the array, causing all following values to shift one position up to make space for the new value, like the image below shows.
 
 <center>
-    <img src="../images/img_array_inserted_shifting_2.png" alt="Array inserted shifting">
+    <img src="../images/arrays/img_array_inserted_shifting_2.png" alt="Array inserted shifting">
 </center>
 
 ## Solution: Swap Values!
@@ -124,7 +124,7 @@ These shifting operation takes a lot of time, and we are not even done yet! Afte
 Instead of all the shifting, swap the lowest value (5) with the first value (64) like below.
 
 <center>
-    <img src="../images/img_array_swap_noshifting_2.png" alt="Array swap shifting">
+    <img src="../images/arrays/img_array_swap_noshifting_2.png" alt="Array swap shifting">
 </center>
 
 We can swap values like the image above shows because the lowest value ends up in the correct position, and it does not matter where we put the other value we are swapping with, because it is not sorted yet.
@@ -177,7 +177,7 @@ $$\theta (\frac{n}{2}\cdot n) = \underline{\underline{\theta(n^2)}}$$
 The time complexity for the Selection Sort algorithm van be displayed in a graph like this:
 
 <center>
-    <img src="../images/img_runtime_n^2.png" alt="Runtime Selection Sort">
+    <img src="../images/arrays/img_runtime_n^2.png" alt="Runtime Selection Sort">
 </center>
 
 As you can see, the run time is the same as for Bubble Sort: The run time increases really fast when the size of the array is increased.

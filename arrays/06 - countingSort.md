@@ -93,5 +93,5 @@ Finally! THe array is sorted.
 Before we implement the algorithm in a programming language we need to go through what happened above in more detail.
 
 <!-- <center>
-    <img src="../images/img_runtime_n^2.png" alt="Runtime Insertion Sort">
+    <img src="../images/arrays/img_runtime_n^2.png" alt="Runtime Insertion Sort">
 </center> -->

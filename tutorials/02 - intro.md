@@ -8,7 +8,7 @@ We structure data in different ways depending on what data we have, and what we 
 
 First, let's consider an example without computers in mind, just to get the idea.
 
-![Lowest value complexity](../images/familyTree.jpg)
+![Lowest value complexity](../images/arrays/sfamilyTree.jpg)
 
 If we want to store data about people we are related to, we use a family tree as the data structure. We choose a family tree as the data structure because we have information about people we are related to and how they are related, and we want an overview so that we can easily find a specific family member, several generations back.
 

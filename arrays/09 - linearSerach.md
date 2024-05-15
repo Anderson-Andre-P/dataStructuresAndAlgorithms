@@ -105,5 +105,5 @@ Isso significa que a complexidade de tempo para Busca Linear é de: $$O(n)$$
 Se desenharmos quanto tempo a Busca Linear precisa para encontrar um valor em uma matriz de $n$ valores, obtemos o gráfico abaixo:
 
 <center>
-    <img src="../images/img_linearsearch_timecomplexity.png" alt="Runtime Linear Search">
+    <img src="../images/arrays/img_linearsearch_timecomplexity.png" alt="Runtime Linear Search">
 </center>

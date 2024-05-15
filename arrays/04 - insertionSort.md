@@ -112,13 +112,13 @@ The way the code above first removes a value and then inserts it somewhere else 
 The problem with this way of programming it's that when removing a value from the array, all elements above must be shifted one index place down:
 
 <center>
-    <img src="../images/img_array_removed_shifting.png" alt="Remove value improvement Insertion Sort">
+    <img src="../images/arrays/img_array_removed_shifting.png" alt="Remove value improvement Insertion Sort">
 </center>
 
 And when inserting the removed value into the array again, there are also many shift operations that must be done: all following elements must shift one position up to make place for the inserted value:
 
 <center>
-    <img src="../images/img_array_inserted_shifting.png" alt="Insert value improvement Insertion Sort">
+    <img src="../images/arrays/img_array_inserted_shifting.png" alt="Insert value improvement Insertion Sort">
 </center>
 
 These shifting operation can take a lot of time, especially for an array with many elements.
@@ -128,7 +128,7 @@ These shifting operation can take a lot of time, especially for an array with ma
 We can avoid most of these shift operations by only shifting the values necessary.
 
 <center>
-    <img src="../images/img_array_inserted_shifting_improved.png" alt="Insert shifting value improvement Insertion Sort">
+    <img src="../images/arrays/img_array_inserted_shifting_improved.png" alt="Insert shifting value improvement Insertion Sort">
 </center>
 
 In the image above, first value is 7 is copied, then values 11 and 12 are shifted one place up in the array, and at last value 7 is put where value 11 was before.
@@ -183,5 +183,5 @@ $$\theta( \frac{n}{2} \cdot n) = \underline{\underline{\theta(n^2)}}$$
 The time complexity for Insertion Sort can be displayed like this.
 
 <center>
-    <img src="../images/img_runtime_n^2.png" alt="Runtime Insertion Sort">
+    <img src="../images/arrays/img_runtime_n^2.png" alt="Runtime Insertion Sort">
 </center>
