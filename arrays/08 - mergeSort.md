@@ -25,7 +25,7 @@ A ilustração abaixo mostra como o Merge Sort funciona de uma perspectiva difer
 
 Vamos tentar fazer a classificação manualmente, apenas para intender como ele funciona antes de implementá-lo em uma linguagem de programação.
 
-**Etapa 1:** começamos com um array não classificado e sabemos que ele se divide ao meio até que os sub-arrays consistam em apenas um elemento. A função Merge Sort chama a si mesma duas vezes, uma para cada metade do arrya. Isso significa que a primeira matriz será subdividida primeiro nos pedaços menores.
+**Etapa 1:** começamos com um array não classificado e sabemos que ele se divide ao meio até que os sub-arrays consistam em apenas um elemento. A função Merge Sort chama a si mesma duas vezes, uma para cada metade do arrya. Isso significa que o primeiro array será subdividida primeiro nos pedaços menores.
 
 [ 12, 8, 9, 3, 11, 5, 4]
 
