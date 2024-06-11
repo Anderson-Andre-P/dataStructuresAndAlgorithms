@@ -8,7 +8,9 @@ Estruturamos os dados de diferentes maneiras, dependendo dos dados que temos e d
 
 Primeiro, vamos considerar um exemplo sem computadores em mente, apenas para se ter uma ideia.
 
-![Complexidade de valor mais baixo](../images/arrays/familyTree.jpg)
+<center>
+    <img src="../images/arrays/familyTree.jpg" alt="Complexidade de valor mais baixo">
+</center>
 
 Se quisermos armazenar dados sobre pessoas com quem temos parentesco, usamos uma árvore genealógica como estrutura de dados. Escolhemos uma árvore genealógica como estrutura de dados porque temos informações sobre pessoas com quem temos parentesco e como elas se relacionam, e queremos uma visão geral para que possamos encontrar facilmente um membro específico da família, há várias gerações.
 
