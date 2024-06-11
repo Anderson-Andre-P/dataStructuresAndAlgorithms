@@ -96,13 +96,13 @@ int linearSearch(int arr[], int size, int targetVal) {
 
 ## Complexidade de tempo de busca linear
 
-Se a Busca Linear for executada e encontrar o valor alvo como o primeiro valor do array em uma matriz com $n$ valores, apenas uma comparação é necessária.
+Se a Busca Linear for executada e encontrar o valor alvo como o primeiro valor do array em um array com $n$ valores, apenas uma comparação é necessária.
 
 Mas se a Busca Linear percorrer todo o conjunto de $n$ valores, sem encontrar o valor alvo, $n$ comparações são necessárias.
 
 Isso significa que a complexidade de tempo para Busca Linear é de: $$O(n)$$
 
-Se desenharmos quanto tempo a Busca Linear precisa para encontrar um valor em uma matriz de $n$ valores, obtemos o gráfico abaixo:
+Se desenharmos quanto tempo a Busca Linear precisa para encontrar um valor em um array de $n$ valores, obtemos o gráfico abaixo:
 
 <center>
     <img src="../images/arrays/img_linearsearch_timecomplexity.png" alt="Runtime Linear Search">

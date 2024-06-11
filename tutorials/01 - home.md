@@ -1,17 +1,17 @@
-# Data Structures and Algorithms
+# Estruturas de dados e algoritmos
 
-Data Structure and Algorithms (DSA) is a fundamental part of Computer Science that teaches you how to think and solve complex problems systematically.
+Estrutura de Dados e Algoritmos (DSA) é uma parte fundamental da Ciência da Computação que ensina como pensar e resolver problemas complexos de forma sistemática.
 
-Using the right DSA makes your program run faster, especially when working with lots of data.
+Usar o DSA certo faz com que seu programa seja executado mais rapidamente, especialmente ao trabalhar com muitos dados.
 
-## This Project
+## Este projeto
 
-This repository is made to help me in learn DSA fast and easy, because always I return to solve my demps.
+Este repositório foi feito para me ajudar a aprender DSA de forma rápida e fácil, pois sempre volto para resolver meus problemas.
 
-First I explain the fundamentals of DSA: understanding different data structures, basic algorithm concepts, and how they are used in programming.
+Primeiro explico os fundamentos do DSA: compreender diferentes estruturas de dados, conceitos básicos de algoritmos e como eles são usados ​​na programação.
 
-Then, I explain more about xomplex DSA like trees and graphs, study advanced sorting and searching algorithms, explore concepts like time and size complexity.
+Em seguida, explico mais sobre DSA xomplex, como árvores e gráficos, estudo algoritmos avançados de classificação e pesquisa, exploro conceitos como complexidade de tempo e tamanho.
 
-## The codes
+## Os códigos
 
-Althrough DSA is actually not specifc to any programming language, all algorithms are made with C, CPP and Py (the best choice to learn is C/CPP because you need to manage pointers and memory, other languages abstract this part a lot).
+Embora o DSA na verdade não seja específico para nenhuma linguagem de programação, todos os algoritmos são feitos com C/CPP (a melhor escolha para aprender é C/CPP porque você precisa gerenciar ponteiros e memória, outras linguagens abstraem muito essa parte).

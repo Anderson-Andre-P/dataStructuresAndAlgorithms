@@ -10,7 +10,7 @@ Os grafos podem ser direcionados ou não direcionados. Em um grafo não direcion
 
 Além disso, os grafos podem ser ponderados ou não ponderados. Em um grafo ponderado, cada aresta tem um peso associado, enquanto em um grafo não ponderado, as arestas não têm peso.
 
-Os grafos podem ser representados de várias maneiras, incluindo matrizes de adjacência, listas de adjacência e estruturas de objetos.
+Os grafos podem ser representados de várias maneiras, incluindo arrays de adjacência, listas de adjacência e estruturas de objetos.
 
 As aplicações dos grafos são vastas e incluem algoritmos de caminho mais curto, algoritmos de árvore geradora mínima, algoritmos de fluxo máximo, modelagem de redes sociais, roteamento de rede, análise de circuitos, entre outros.
 

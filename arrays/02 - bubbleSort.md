@@ -1,60 +1,60 @@
 # Bubble Sort
 
-Bubble Sort is an algorithm that sorts an array from the lowest value to the highest value.
+Bubble Sort é um algoritmo que classifica um array do valor mais baixo para o valor mais alto.
 
-The word 'Bubble' comes from how this algorithm works, it makes the highest values 'bubble up'.
+A palavra 'Bolha' vem de como esse algoritmo funciona, ele faz com que os valores mais altos 'borbulhem'.
 
-### How it works
+### Como funciona
 
-1. Go through the array, one value at a time.
-2. For each value, compare the value with the next value.
-3. If the value is higher than the next one, swap the values so that the highest value comes last.
-4. Go through the array as many times as there are values in the array.
+1. Percorra o array, um valor de cada vez.
+2. Para cada valor, compare o valor com o próximo valor.
+3. Caso o valor seja maior que o próximo, troque os valores para que o maior valor fique por último.
+4. Percorra o array quantas vezes houver valores no array.
 
-## Manual Run Through
+## Execução manual
 
-Before we implement the Bubble Sort algorithm in a programming language, let's manually run through a short array only one time, just to get the idea.
+Antes de implementarmos o algoritmo Bubble Sort em uma linguagem de programação, vamos executar manualmente um pequeno array apenas uma vez, só para ter uma ideia.
 
 > [!TIP]
-> The first loop was done step by step (steps 1 to 8), but for simplicity, after step 8 each step is a loop.
+> O primeiro loop foi feito passo a passo (passos 1 a 8), mas para simplificar, após o passo 8 cada passo é um loop.
 
-**Step 1:** we start with an unsorted array.
+**Etapa 1:** começamos com um array não classificado.
 
 [7, 12, 9, 11, 3]
 
-**Step 2:** we look at the two first values. Does the lowest value come first? Yes, so we don't need to swap them.
+**Etapa 2:** analisamos os dois primeiros valores. O valor mais baixo vem primeiro? Sim, então não precisamos trocá-los.
 
 [`7`, `12`, 9, 11, 3]
 
-**Step 3:** take one step forward and look at values 12 and 9. Does the lowest value come first? No.
+**Etapa 3:** dê um passo à frente e observe os valores 12 e 9. O valor mais baixo vem primeiro? Não.
 
 [7, `12`, `9`, 11, 3]
 
-**Step 4:** so we need to swap them so that 9 comes first.
+**Etapa 4:** então precisamos trocá-los para que 9 venha primeiro.
 
 [7, `9`, `12`, 11, 3]
 
-**Step 5:** taking one step forward, looking at 12 and 11.
+**Etapa 5:** dar um passo à frente, olhando para 12 e 11.
 
 [7, 9, `12`, `11`, 3]
 
-**Step 6:** we must swap so that 11 comes before 12.
+**Etapa 6:** devemos trocar para que 11 venha antes de 12.
 
 [7, 9, `11`, `12`, 3]
 
-**Step 7:** looking at 12 and 3, do we need to swap them? Yes.
+**Etapa 7:** olhando para 12 e 3, precisamos trocá-los? Sim.
 
 [7, 9, 11, `12`, `3`]
 
-**Step 8:** Swapping 12 and 3, so that 3 comes first.
+**Etapa 8:** Trocando 12 e 3, para que 3 venha primeiro.
 
 [7, 9, 11, `3`, `12`]
 
-**Step 8:** Swapping 12 and 3, so that 3 comes first.
+**Etapa 8:** Trocando 12 e 3, para que 3 venha primeiro.
 
 [7, 9, 11, `3`, `12`]
 
-**Step 9:** Continuing with the next iteration, we start again from the beginning.
+**Etapa 9:** Continuando com a próxima iteração, começamos novamente desde o início.
 
 [`7`, `9`, 11, 3, 12]
 
@@ -66,7 +66,7 @@ Before we implement the Bubble Sort algorithm in a programming language, let's m
 
 [`7`, `9`, 3, 11, 12]
 
-**Step 10:** Another iteration.
+**Etapa 10:** Outra iteração.
 
 [7, `9`, `3`, 11, 12]
 
@@ -74,7 +74,7 @@ Before we implement the Bubble Sort algorithm in a programming language, let's m
 
 [7, 3, 9, `11`, `12`]
 
-**Step 11:** One more iteration.
+**Etapa 11:** Mais uma iteração.
 
 [`7`, `3`, 9, 11, 12]
 
@@ -84,7 +84,7 @@ Before we implement the Bubble Sort algorithm in a programming language, let's m
 
 [3, 7, 9, `11`, `12`]
 
-**Step 12:** Final iteration.
+**Etapa 12:** Iteração final.
 
 [`3`, `7`, 9, 11, 12]
 
@@ -96,27 +96,27 @@ Before we implement the Bubble Sort algorithm in a programming language, let's m
 
 [3, 7, 9, 11, `12`]
 
-**Sorted array:** [3, 7, 9, 11, 12]
+**Array classificada:** [3, 7, 9, 11, 12]
 
-## Manual Run Through: What Happened?
+## Execução manual: o que aconteceu?
 
-We must understand what happened in this first run through to fully understand the algorithm, so that we can implement the algorithm in a programming language.
+Devemos entender o que aconteceu nesta primeira execução para compreender completamente o algoritmo, para que possamos implementá-lo em uma linguagem de programação.
 
-Can you see what happened to the highest value 12? It has bubbled up to the end of the array, where it belongs. But the rest of the array remains unsorted.
+Você consegue ver o que aconteceu com o valor mais alto 12? Ele borbulhou até o final do array, onde pertence. Mas o resto do array permanece sem classificação.
 
-So the Bubble Sort algorithm must run through the array again, and again, and again, each time the next highest value bubbles up to its correct position. The sorting continues until the lowest value 3 is left at the start of the array. This means that we need to run through the array 4 times, to sort the array of 5 values.
+Portanto, o algoritmo Bubble Sort deve percorrer o array novamente, e novamente, e novamente, cada vez que o próximo valor mais alto borbulhar até sua posição correta. A classificação continua até que o valor mais baixo 3 seja deixado no início do array. Isso significa que precisamos percorrer o array 4 vezes para classificar o array de 5 valores.
 
-And each time the algorithm runs through the array, the remaining unsorted part of the array becomes shorter.
+E cada vez que o algoritmo percorre o array, a parte restante não classificada do array fica mais curta.
 
-## Bubble Sort Implementation
+## Implementação de classificação por bolha
 
-To implement the Bubble Sort algorithm in a programming language, we need:
+Para implementar o algoritmo Bubble Sort em uma linguagem de programação, precisamos:
 
-1. An array with to sort.
-2. An inner loop that goes through the array and swaps values if the first value is higher than the next value. This loop must loop through one less value each time ir runs.
-3. An outer loop that controls how many times the inner loop must run. For an array with n values, this outer loop must run n-1 times.
+1. Um array para classificar.
+2. Um loop interno que percorre o array e troca valores se o primeiro valor for maior que o próximo valor. Este loop deve percorrer um valor a menos cada vez que for executado.
+3. Um loop externo que controla quantas vezes o loop interno deve ser executado. Para um array com n valores, esse loop externo deve ser executado n-1 vezes.
 
-The resulting code looks like this:
+O código resultante fica assim:
 
 ```c
 #include <stdio.h>
@@ -147,19 +147,19 @@ int main() {
 // output: "Sorted array: 5 11 12 22 25 34 64 90"
 ```
 
-## Bubble Sort Improvement
+## Melhoria no Bubble Sort
 
-The Bubble Sort algorithm can be improved a little bit more.
+O algoritmo Bubble Sort pode ser melhorado um pouco mais.
 
-Imagine that the array is almost sorted already, with the lowest numbers at the start, like for example:
+Imagine que o array já está quase ordenado, com os números mais baixos no início, como por exemplo:
 
 ```
 my_array = [7, 3, 9, 12, 11]
 ```
 
-In this case, the array will be sorted after the first run, but the Bubble Sort algorithm will continue to run, without swapping elements, and that is not necessary.
+Neste caso, o array será ordenado após a primeira execução, mas o algoritmo Bubble Sort continuará a ser executado, sem troca de elementos, e isso não é necessário.
 
-If the algorithm goes through the array one time without swapping any values, the array must be finished sorted, and we can stop the algorithm, like this:
+Se o algoritmo passar pelo array uma vez sem trocar nenhum valor, o array deverá ser finalizado e podemos parar o algoritmo, assim:
 
 ```c
 #include <stdio.h>
@@ -196,22 +196,22 @@ int main() {
 // Output: "Sorted array: 3 7 9 11 12"
 ```
 
-## Bubble Sort Time Complexity
+## Complexidade do tempo de execução do Bubble Sort
 
-The Bubble Sort algorithm loops through every value in the array, comparing it to the value next to it. So for an array of $\ n$ values, there must be $\ n$ such comparisons in one loop.
+O algoritmo Bubble Sort percorre cada valor do array, comparando-o com o valor próximo a ele. Portanto, para um array de valores $\ n$, deve haver $\ n$ tais comparações em um loop.
 
-And after one loop, the array is looped through again and again $\ n$ times
+E depois de um loop, o array é repetido repetidamente $\ n$ vezes
 
-This means there are $\ n \times n$ comparisons done in total, so the time complexity for Bubble Sort is:
+Isso significa que há comparações $\ n \times n$ feitas no total, então a complexidade de tempo para Bubble Sort é:
 
 $$\theta(n^2)$$
 
-The graph describing the Bubble Sort time complexity looks like this:
+O gráfico que descreve a complexidade de tempo do Bubble Sort é assim:
 
 <center>
-    <img src="../images/arrays/s/../images/arrays/img_runtime_n^2.png" alt="Bubble Sort value complexity">
+    <img src="../images/arrays/img_runtime_n^2.png" alt="Bubble Sort value complexity">
 </center>
 
-As you can see, the run time increases really fast when the size of the array is increased.
+Como você pode ver, o tempo de execução aumenta muito rápido quando o tamanho do array aumenta.
 
-Luckily there are sorting algorithms that are faster than this, like Quicksort.
+Felizmente, existem algoritmos de classificação mais rápidos do que isso, como o Quicksort.

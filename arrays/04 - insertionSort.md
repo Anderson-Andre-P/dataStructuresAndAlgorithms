@@ -1,76 +1,76 @@
 # Insertion Sort
 
-The Insertion Sort algorithm uses one part of the array to hold the sorted values, and the other part of the array to hold values that are not sorted yet.
+O algoritmo de classificação por inserção usa uma parte do array para armazenar os valores classificados e a outra parte do array para armazenar os valores que ainda não foram classificados.
 
-The algorithm takes one value at a time from the unsorted part of the array and puts it into the right place in the sorted part of the array, until the array is sorted.
+O algoritmo pega um valor de cada vez da parte não classificada do array e o coloca no lugar certo na parte classificada do array, até que o array seja classificado.
 
-### How it works
+### Como funciona
 
-1. Take the first value from the unsorted part of the array.
-2. Move the value into the correct place in the sorted part of the array.
-3. Go through the unsorted part of the array again as many times as there are values.
+1. Pegue o primeiro valor da parte não classificada do array.
+2. Mova o valor para o local correto na parte classificada do array.
+3. Percorra novamente a parte não classificada do array quantas vezes houver valores.
 
-## Manual Run Through
+## Execução manual
 
-Before we implement the Insertion Sort algorithm in a programming language, let's manually run through a short array, just to get the idea.
+Antes de implementarmos o algoritmo Insertion Sort em uma linguagem de programação, vamos percorrer manualmente um pequeno array, só para ter uma ideia.
 
-**Step 1:** we start with an unsorted array.
+**Etapa 1:** começamos com um array não classificado.
 
 [7, 12, 9, 11, 3]
 
-**Step 2:** we can consider the first value as the initial sorted part of the array. If it is just one value, it must be sorted, right?
+**Etapa 2:** podemos considerar o primeiro valor como a parte inicial classificada do array. Se for apenas um valor, deve ser ordenado, certo?
 
 [`7`,12, 9, 11, 3]
 
-**Step 3:** The next value 12 should now be moved into the correct position in the sorted part of the array. But 12 is higher than 7, so it is already in the correct position.
+**Etapa 3:** O próximo valor 12 agora deve ser movido para a posição correta na parte classificada do array. Mas 12 é maior que 7, então já está na posição correta.
 
 [7, `12`, 9, 11, 3]
 
-**Step 4:** consider the next value 9.
+**Etapa 4:** considere o próximo valor 9.
 
 [7, 12, `9`, 11, 3]
 
-**Step 5:** the value 9 must now be moved into the correct position inside the sorted part of the array, so we move 9 in between 7 and 12.
+**Etapa 5:** o valor 9 agora deve ser movido para a posição correta dentro da parte classificada do array, então movemos 9 entre 7 e 12.
 
 [7, `9`, 12, 11, 3]
 
-**Step 6:** the next value is 11.
+**Etapa 6:** o próximo valor é 11.
 
 [7, 9, 12, `11`, 3]
 
-**Step 7:** we move it in between 9 and 12 in the sorted part of the array.
+**Etapa 7:** movemos entre 9 e 12 na parte classificada do array.
 
 [7, 9, `11`,12, 3]
 
-**Step 8:** the last value to insert into the correct position is 3.
+**Etapa 8:** o último valor a ser inserido na posição correta é 3.
 
 [7, 9, 11, 12, `3`]
 
-**Step 9:** we insert 3 in front of all other values because it is the lowest value.
+**Etapa 9:** inserimos 3 na frente de todos os outros valores porque é o valor mais baixo.
 
 [`3`, 7, 9, 11, 12]
 
-## Manual Run Through: What Happened?
+## Execução manual: o que aconteceu?
 
-We must understand what happened above to fully understand the algorithm, so that we can implement the algorithm in a programming language.
+Devemos entender o que aconteceu acima para compreender totalmente o algoritmo, para que possamos implementá-lo em uma linguagem de programação.
 
-The first value is considered to be the initial sorted part of the array.
+O primeiro valor é considerado a parte inicial classificada do array.
 
-Every value after the first value must be compared to the values in the sorted part of the algorithm so that it can be inserted into the correct position.
+Cada valor após o primeiro valor deve ser comparado com os valores da parte ordenada do algoritmo para que possa ser inserido na posição correta.
 
-The Insertion Sort Algorithm must run through the array 4 times, to sort the array of 5 values because we do not have to sort the first value.
+O algoritmo de classificação por inserção deve percorrer o array 4 vezes, para classificar o array de 5 valores porque não precisamos classificar o primeiro valor.
 
-And each time the algorithm tuns through the array, the remaining unsorted part of the array becomes shorter.
+E cada vez que o algoritmo percorre o array, a parte restante não classificada do array fica mais curta.
 
-## Insertion Sort Implementation
+## Implementação de classificação por inserção
 
-To implement the Insertion Sort algorithm in a programming language, we need:
+Para implementar o algoritmo Insertion Sort em uma linguagem de programação, precisamos:
 
-1. An array with values to sort.
-2. An outer loop that picks a value to be sorted. For an array with $\ n$ values, this outer loop skips the first value, and must run $\ n - 1$ times.
-3. An innert loop that goes through the sorted part of the array, to find where to insert the value. If the value to be sorted is ar index $\ i$, the sorted part of the array starts ar index $\ 0$ and ends at index $\ i - 1$.
+1. um array com valores para classificar.
+2. Um loop externo que escolhe um valor a ser classificado. Para um array com valores $\ n$, esse loop externo ignora o primeiro valor e deve ser executado $\ n - 1$ vezes.
+3. Um loop interno que percorre a parte classificada do array, para descobrir onde inserir o valor. Se o valor a ser classificado for um índice $\ i$, a parte classificada do array começa com um índice $\ 0$ e termina no índice $\ i - 1$.
 
-The resulting code looks like this:
+O código resultante fica assim:
 
 ```c
 #include <stdio.h>
@@ -103,39 +103,39 @@ int main() {
 // Output: "Sorted array: 5 11 12 22 25 34 64 90"
 ```
 
-## Insertion Sort Improvement
+## Melhoria na classificação de inserção
 
-Insertion Sort can be improved a little bit more.
+A classificação por inserção pode ser melhorada um pouco mais.
 
-The way the code above first removes a value and then inserts it somewhere else is intuitive. It's how you would do Insertion Sort physically with a hand of cards for example. If low value cards are sorted to the left, you pick uo a new unsorted card, and insert it in the correct place between the other already sorted cards.
+A maneira como o código acima primeiro remove um valor e depois o insere em outro lugar é intuitiva. É como você faria o Insertion Sort fisicamente com uma mão de cartas, por exemplo. Se as cartas de baixo valor forem classificadas à esquerda, você escolhe uma nova carta não classificada e a insere no lugar correto entre as outras cartas já classificadas.
 
-The problem with this way of programming it's that when removing a value from the array, all elements above must be shifted one index place down:
+O problema com esta forma de programação é que ao remover um valor do array, todos os elementos acima devem ser deslocados uma posição de índice para baixo:
 
 <center>
     <img src="../images/arrays/img_array_removed_shifting.png" alt="Remove value improvement Insertion Sort">
 </center>
 
-And when inserting the removed value into the array again, there are also many shift operations that must be done: all following elements must shift one position up to make place for the inserted value:
+E ao inserir novamente o valor removido no array, também há muitas operações de deslocamento que devem ser feitas: todos os elementos seguintes devem deslocar uma posição para cima para dar lugar ao valor inserido:
 
 <center>
     <img src="../images/arrays/img_array_inserted_shifting.png" alt="Insert value improvement Insertion Sort">
 </center>
 
-These shifting operation can take a lot of time, especially for an array with many elements.
+Essas operações de mudança podem levar muito tempo, especialmente para um array com muitos elementos.
 
-## Improved Solution
+## Solução aprimorada
 
-We can avoid most of these shift operations by only shifting the values necessary.
+Podemos evitar a maioria dessas operações de mudança mudando apenas os valores necessários.
 
 <center>
     <img src="../images/arrays/img_array_inserted_shifting_improved.png" alt="Insert shifting value improvement Insertion Sort">
 </center>
 
-In the image above, first value is 7 is copied, then values 11 and 12 are shifted one place up in the array, and at last value 7 is put where value 11 was before.
+Na imagem acima, o primeiro valor 7 é copiado, depois os valores 11 e 12 são deslocados uma posição para cima no array e, por último, o valor 7 é colocado onde o valor 11 estava antes.
 
-The number of shifting operations is reduced from 12 to 2 in this case.
+O número de operações de mudança é reduzido de 12 para 2 neste caso.
 
-This improvement is implemented in the example below:
+Esta melhoria é implementada no exemplo abaixo:
 
 ```c
 #include <stdio.h>
@@ -168,19 +168,19 @@ int main() {
 // Output: "Sorted array: 5 11 12 22 25 34 64 90"
 ```
 
-## Insertion Sort Time Complexity
+## Complexidade do tempo de classificação de inserção
 
-Selection Sort sorts an array of $n$ values.
+Seleção de classificação classifica um array de valores $n$.
 
-On average, each value must be compared to about $\frac{n}{2}$ other values to find out where to insert it.
+Em média, cada valor deve ser comparado com cerca de $\frac{n}{2}$ outros valores para descobrir onde inseri-lo.
 
-And Seletion Sort must run the loop to insert a value in its correct place approximately $n$ times.
+E o Selection Sort deve executar o loop para inserir um valor em seu lugar correto aproximadamente $n$ vezes.
 
-We get time complexity for Insertion Sort:
+Obtemos complexidade de tempo para classificação por inserção:
 
 $$\theta( \frac{n}{2} \cdot n) = \underline{\underline{\theta(n^2)}}$$
 
-The time complexity for Insertion Sort can be displayed like this.
+A complexidade de tempo para classificação por inserção pode ser exibida assim.
 
 <center>
     <img src="../images/arrays/img_runtime_n^2.png" alt="Runtime Insertion Sort">

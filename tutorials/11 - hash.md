@@ -111,7 +111,7 @@ struct HashElement {
 class HashTable {
 private:
     static const int TABLE_SIZE = 100; // Tamanho da tabela de hash
-    std::list<HashElement> table[TABLE_SIZE]; // Tabela de hash implementada como uma matriz de listas encadeadas
+    std::list<HashElement> table[TABLE_SIZE]; // Tabela de hash implementada como um array de listas encadeadas
 
     // Função de hashing simples que retorna um índice baseado na chave
     int hashFunction(const std::string& key) {
@@ -160,7 +160,7 @@ int main() {
 }
 ```
 
-Neste exemplo, a classe `HashTable` contém uma matriz de listas encadeadas (`std::list`) chamada `table`, onde cada entrada na matriz é uma lista de elementos. A função `hashFunction` é usada para calcular o índice na matriz com base na chave.
+Neste exemplo, a classe `HashTable` contém um array de listas encadeadas (`std::list`) chamada `table`, onde cada entrada no array é uma lista de elementos. A função `hashFunction` é usada para calcular o índice no array com base na chave.
 
 A função `insert` insere um novo elemento na lista correspondente ao índice calculado.
 

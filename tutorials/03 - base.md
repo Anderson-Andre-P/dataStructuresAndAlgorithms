@@ -39,9 +39,9 @@ Neste exemplo:
 
 Esse é um exemplo básico de como usar arrays em C/C++. Eles são úteis para armazenar uma coleção de valores do mesmo tipo em uma única estrutura de dados e acessá-los por meio de índices.
 
-2. **Matrizes:**
+2. **Arrays:**
 
-   - Matrizes são arrays multidimensionais, ou seja, arrays de arrays.
+   - Arrays são arrays multidimensionais, ou seja, arrays de arrays.
    - São usadas para representar tabelas de dados com duas ou mais dimensões.
    - Acesso aos elementos é feito utilizando múltiplos índices.
 
@@ -49,18 +49,18 @@ Esse é um exemplo básico de como usar arrays em C/C++. Eles são úteis para a
 #include <stdio.h>
 
 int main() {
-    // Declaração de uma matriz 3x3 de inteiros
-    int matriz[3][3] = {
+    // Declaração de um array 3x3 de inteiros
+    int array[3][3] = {
         {1, 2, 3},
         {4, 5, 6},
         {7, 8, 9}
     };
 
-    // Impressão dos valores da matriz
-    printf("Valores da matriz:\n");
+    // Impressão dos valores do array
+    printf("Valores do array:\n");
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            printf("%d ", matriz[i][j]);
+            printf("%d ", array[i][j]);
         }
         printf("\n");
     }
@@ -71,11 +71,11 @@ int main() {
 
 Neste exemplo:
 
-- Declaramos uma matriz 3x3 de inteiros chamada `matriz`.
-- Atribuímos valores aos elementos da matriz utilizando índices bidimensionais.
-- Imprimimos os valores da matriz utilizando dois loops for, um para as linhas e outro para as colunas.
+- Declaramos um array 3x3 de inteiros chamada `array`.
+- Atribuímos valores aos elementos do array utilizando índices bidimensionais.
+- Imprimimos os valores do array utilizando dois loops for, um para as linhas e outro para as colunas.
 
-Esse é um exemplo básico de como usar matrizes em C/C++. Elas são úteis para armazenar dados em uma estrutura bidimensional, como uma tabela, e acessá-los por meio de índices de linha e coluna.
+Esse é um exemplo básico de como usar Arrays em C/C++. Elas são úteis para armazenar dados em uma estrutura bidimensional, como uma tabela, e acessá-los por meio de índices de linha e coluna.
 
 3. **Structs (Estruturas):**
 

@@ -1,98 +1,98 @@
-# DSA
+#DSA
 
-An efficient way to store data.
+Uma maneira eficiente de armazenar dados.
 
-## What are Data Structures?
+## O que são estruturas de dados?
 
-We structure data in different ways depending on what data we have, and what we want to do with it.
+Estruturamos os dados de diferentes maneiras, dependendo dos dados que temos e do que queremos fazer com eles.
 
-First, let's consider an example without computers in mind, just to get the idea.
+Primeiro, vamos considerar um exemplo sem computadores em mente, apenas para se ter uma ideia.
 
-![Lowest value complexity](../images/arrays/familyTree.jpg)
+![Complexidade de valor mais baixo](../images/arrays/familyTree.jpg)
 
-If we want to store data about people we are related to, we use a family tree as the data structure. We choose a family tree as the data structure because we have information about people we are related to and how they are related, and we want an overview so that we can easily find a specific family member, several generations back.
+Se quisermos armazenar dados sobre pessoas com quem temos parentesco, usamos uma árvore genealógica como estrutura de dados. Escolhemos uma árvore genealógica como estrutura de dados porque temos informações sobre pessoas com quem temos parentesco e como elas se relacionam, e queremos uma visão geral para que possamos encontrar facilmente um membro específico da família, há várias gerações.
 
-With a data structure of your family family tree, it would be easy to see, for example, who your mother's mother is – your grandmother in this case, right? But without parent-child links present in the tree, it would be difficult to determine how individuals are related.
+Com uma estrutura de dados da sua árvore genealógica seria fácil ver, por exemplo, quem é a mãe da sua mãe – sua avó no caso, certo? Mas sem as ligações entre pais e filhos presentes na árvore, seria difícil determinar como os indivíduos estão relacionados.
 
-An data structure provide us the possibility to manage large amounts of data efficiently for uses such as large databases and internet indexing services.
+Uma estrutura de dados nos fornece a possibilidade de gerenciar grandes quantidades de dados de forma eficiente para usos como grandes bancos de dados e serviços de indexação na Internet.
 
-Data structures are essential ingredients in creating fast and powerful algorithms. They help in managing and organizing data, reduce complexity, and increase efficiency.
+As estruturas de dados são ingredientes essenciais na criação de algoritmos rápidos e poderosos. Eles ajudam no gerenciamento e organização de dados, reduzem a complexidade e aumentam a eficiência.
 
-## Different kinds of data structures
+## Diferentes tipos de estruturas de dados
 
-In computer science there are two different kinds of data structures.
+Na ciência da computação existem dois tipos diferentes de estruturas de dados.
 
-**Primitive Data Structures:** are basic data structures provided by programming languages to represent single values, such as integers, floating-point numbers, characters, and booleans.
+**Estruturas de dados primitivas:** são estruturas de dados básicas fornecidas por linguagens de programação para representar valores únicos, como inteiros, números de ponto flutuante, caracteres e booleanos.
 
-**Abstract Data Structures:** are higher-level data structures that are built using primitive data types and provide more complex and specialized operations. Some commim examples of abstract data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+**Estruturas de dados abstratas:** são estruturas de dados de nível superior criadas usando tipos de dados primitivos e fornecem operações mais complexas e especializadas. Alguns exemplos de estruturas de dados abstratas incluem arrays, listas vinculadas, pilhas, filas, árvores e gráficos.
 
-## What are algorithms?
+## O que são algoritmos?
 
-An algorithm is a set of step-by-step instructions to solve a given problem or achieve a specific goal.
+Um algoritmo é um conjunto de instruções passo a passo para resolver um determinado problema ou atingir um objetivo específico.
 
-For example, think an recipe writthen on a piece of paper, where the goal is to make certain dinner. The steps needed to make a specific dinner are described exactly.
+Por exemplo, pense em uma receita escrita em um pedaço de papel, onde o objetivo é fazer determinado jantar. Os passos necessários para fazer um jantar específico são descritos com exatidão.
 
-When we talk about algorithms in computer science, the step-by-step instructions are written in a programming language, an algorithm uses data structures.
+Quando falamos de algoritmos em ciência da computação, as instruções passo a passo são escritas em uma linguagem de programação, um algoritmo utiliza estruturas de dados.
 
-Algorithms are fundamental to computer programming as they provide step-by-step instructions for executing tasks. An efficient algorithm can help us to find the solution we are looking for, and transform a slow program into a faster one.
+Algoritmos são fundamentais para a programação de computadores, pois fornecem instruções passo a passo para a execução de tarefas. Um algoritmo eficiente pode nos ajudar a encontrar a solução que procuramos e transformar um programa lento em um mais rápido.
 
-By studying algorithms, developers can erite better programs.
+Ao estudar algoritmos, os desenvolvedores podem criar programas melhores.
 
-Algorithm examples:
+Exemplos de algoritmos:
 
-- Finding the fastest toute in a GPS navigation system;
-- Navigating an airplane or a car (cruise control);
-- Finding what users search for (search engine);
-- Sorting, for example sorting movies by rating.
+- Encontrar o trajeto mais rápido em um sistema de navegação GPS;
+- Navegar num avião ou num carro (controlo de cruzeiro);
+- Encontrar o que os usuários procuram (motor de busca);
+- Classificação, por exemplo, classificação de filmes por classificação.
 
-The algorithms we will look at in this file are designed to solve specific problems, and are often made to work on specific data structures. For example, the "Bubble Sort" algorithm is designed to sort values, and is made to work on arrays.
+Os algoritmos que veremos neste arquivo são projetados para resolver problemas específicos e geralmente são feitos para funcionar em estruturas de dados específicas. Por exemplo, o algoritmo "Bubble Sort" foi projetado para classificar valores e funciona em arrays.
 
-## Data structures together with Algorithms
+## Estruturas de dados junto com algoritmos
 
-Data Structures and Algorithms (DSA) go hand in hand. A data structure (DS) is not worth much if you cannot search through it or manipulate ir efficiently using algorithms, and the algorithms in here are not worth much without a DS to work on.
+Estruturas de dados e algoritmos (DSA) andam de mãos dadas. Uma estrutura de dados (DS) não vale muito se você não puder pesquisá-la ou manipulá-la de forma eficiente usando algoritmos, e os algoritmos aqui contidos não valem muito sem um DS para trabalhar.
 
-DSA is about finding efficient ways to store and retrieve data, to perform operations on data, and to solve specific problems.
+DSA trata de encontrar maneiras eficientes de armazenar e recuperar dados, de realizar operações em dados e de resolver problemas específicos.
 
-By understanding DSA, you can:
+Ao compreender o DSA, você pode:
 
-- Decide which data structure or algorithm is best for a given situation;
-- Make programs that run faster or use less memory;
-- understand how to approach complex problems and solve them in a systematic way.
+- Decidir qual estrutura de dados ou algoritmo é melhor para determinada situação;
+- Faça programas que rodem mais rápido ou usem menos memória;
+- compreender como abordar problemas complexos e resolvê-los de forma sistemática.
 
-## Where is DSA needed?
+## Onde o DSA é necessário?
 
-DSA are used in virtually every software system, from operating systems to web applications:
+Os DSA são usados ​​em praticamente todos os sistemas de software, desde sistemas operacionais até aplicativos da web:
 
-- For managing large amounts of data, such as in a social network or a search engine;
-- For scheduling tasks, to decide which task a computer should first;
-- For planning routes, like in a GPS system to find the shortest path from A to B;
-- For optimizing processes, such as arranging tasks so they can be completed as quickly as possible;
-- For solving complex problems: from finding the best way to pack a truck to making a computer 'learn' from data.
+- Para gerir grandes quantidades de dados, como numa rede social ou num motor de busca;
+- Para agendar tarefas, para decidir qual tarefa um computador deve primeiro;
+- Para planejar rotas, como em um sistema GPS para encontrar o caminho mais curto de A a B;
+- Para otimizar processos, como organizar tarefas para que possam ser concluídas o mais rápido possível;
+- Para resolver problemas complexos: desde encontrar a melhor forma de embalar um caminhão até fazer um computador 'aprender' com os dados.
 
-DSA is fundamental in nearly every part of the software world:
+O DSA é fundamental em quase todas as partes do mundo do software:
 
-- Operating systems;
-- Database systems;
-- Web applications;
-- Machine learning;
-- Video games;
-- Cryptographic systems;
-- Data analysis;
-- Search engines.
+- Sistemas operacionais;
+- Sistemas de banco de dados;
+- Aplicativos da web;
+- Aprendizado de máquina;
+- Jogos de vídeo;
+- Sistemas criptográficos;
+- Análise de dados;
+- Motores de busca.
 
-## Theory and Terminology
+## Teoria e Terminologia
 
-As we go along in this file, new theorical concepts and terminology will be needed so that we can better understanding the DSA we will be working on.
+À medida que avançamos neste arquivo, novos conceitos teóricos e terminologia serão necessários para que possamos compreender melhor o DSA em que trabalharemos.
 
-These new words and concepts will be introduced and explained properly when they are needed, but here is a list of some key terms, just to get an overview of what is coming.
+Estas novas palavras e conceitos serão introduzidos e explicados adequadamente quando forem necessários, mas aqui está uma lista de alguns termos-chave, apenas para ter uma visão geral do que está por vir.
 
-| Term                | Description                                                                                                                                                                                                              |
-| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Algorithm           | A set of step-by-step instructions to solve a specific problem                                                                                                                                                           |
-| Data Structure (DS) | A way of organizing data so it can be used efficiently. Common data structures include arrays, linked lists, and binary trees.                                                                                           |
-| Time Complexity     | A measure of the amount of time an algorithm takes to run, depending on the amount of data the algorithm is working on.                                                                                                  |
-| Space Complexity    | A measure of the amount of memory an algorithm uses, depending on the amount of data the algorithm is working on.                                                                                                        |
-| Big O Notation      | A mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. Used in this tutorial to describe the time complexity of an algorithm.        |
-| Recursion           | A programming technique where a function calls itself.                                                                                                                                                                   |
-| Divide and Conquer  | A method of solving complex problems by breaking them into smaller, more manageable sub-problems, solving the sub-problems, and combining the solutions. Resursion is often used when using this method in an algorithm. |
-| Brute Force         | A simple and straight forward way an algorithm can work by simply trying all possible solutions and then choosing the best one.                                                                                          |
+| Prazo                   | Descrição                                                                                                                                                                                                                       |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Algoritmo               | Um conjunto de instruções passo a passo para resolver um problema específico                                                                                                                                                    |
+| Estrutura de Dados (DS) | Uma forma de organizar os dados para que possam ser usados ​​com eficiência. Estruturas de dados comuns incluem arrays, listas vinculadas e árvores binárias.                                                                   |
+| Complexidade do tempo   | Uma medida da quantidade de tempo que um algoritmo leva para ser executado, dependendo da quantidade de dados em que o algoritmo está trabalhando.                                                                              |
+| Complexidade Espacial   | Uma medida da quantidade de memória que um algoritmo usa, dependendo da quantidade de dados em que o algoritmo está trabalhando.                                                                                                |
+| Notação Big O           | Uma notação matemática que descreve o comportamento limitante de uma função quando o argumento tende para um determinado valor ou infinito. Usado neste tutorial para descrever a complexidade de tempo de um algoritmo.        |
+| Recursão                | Uma técnica de programação em que uma função chama a si mesma.                                                                                                                                                                  |
+| Dividir e Conquistar    | Um método de resolver problemas complexos dividindo-os em subproblemas menores e mais gerenciáveis, resolvendo os subproblemas e combinando as soluções. A resursão é frequentemente usada ao usar esse método em um algoritmo. |
+| Força Bruta             | Uma maneira simples e direta de um algoritmo funcionar, simplesmente tentando todas as soluções possíveis e então escolhendo a melhor.                                                                                          |

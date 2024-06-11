@@ -1,24 +1,24 @@
 # Arrays
 
-An array is a data structure (DS) used to store multiple elements.
+um array é uma estrutura de dados (DS) usada para armazenar vários elementos.
 
-Arrays are used by many algorithms.
+Arrays são usadas por muitos algoritmos.
 
-In C/CPP, an array can be created like this:
+Em C/CPP, um array pode ser criado assim:
 
 ```c
 int my_array[] = {9, 14, 7, 22, 8};
 ```
 
-Arrays are indexed, meaning that each element in the array has an index, a number that says where in the array the element is located. The programming language in this tutorial (C/CPP) use zero-based indexing for arrays, meaning that the first element in an array can be accessed at index 0.
+Os arrays são indexados, o que significa que cada elemento do array possui um índice, um número que indica onde o elemento está localizado no array. A linguagem de programação neste tutorial (C/CPP) usa indexação baseada em zero para arrays, o que significa que o primeiro elemento de um array pode ser acessado no índice 0.
 
-In C, this code use index 0 to write the first element (value 9) to the console:
+Em C, este código usa o índice 0 para escrever o primeiro elemento (valor 9) no console:
 
 ```c
 printf("%d", my_array[0]);
 ```
 
-Yet in C, to print all the elements of array, you can use this algorithm below:
+Já em C, para imprimir todos os elementos do array, você pode usar este algoritmo abaixo:
 
 ```c
 #include <stdio.h>
@@ -40,30 +40,30 @@ int main() {
 }
 ```
 
-## Algorithm: Find The Lowest Value in an Array
+## Algoritmo: Encontre o valor mais baixo em um array
 
-Let's create our first algorithm using the array DS.
+Vamos criar nosso primeiro algoritmo usando o array DS.
 
-Below is the algorithm to find the lowest number in an array.
+Abaixo está o algoritmo para encontrar o número mais baixo em um array.
 
-### How it works:
+### Como funciona:
 
-1. Go through the values in the array one by one.
-2. Check if the current value is the lowest so far, and if it is, store it.
-3. After looking at all the values, the stored value will be the lowest of all values in the array.
+1. Analise os valores do array um por um.
+2. Verifique se o valor atual é o mais baixo até o momento e, se for, armazene-o.
+3. Depois de observar todos os valores, o valor armazenado será o mais baixo de todos os valores do array.
 
-## Implementation
+## Implementação
 
-Before implementing the algorithm using an actual programming language, it is usually smart to first write the algorithm as a step-by-step procedure.
+Antes de implementar o algoritmo usando uma linguagem de programação real, geralmente é inteligente primeiro escrever o algoritmo como um procedimento passo a passo.
 
-If you can write down the algorithm in something between human language (pseudocode) and programming language, the algorithm will be easier to implement later because we avoid drowning in all the details of programming language syntax.
+Se você puder escrever o algoritmo em algo entre a linguagem humana (pseudocódigo) e a linguagem de programação, o algoritmo será mais fácil de implementar posteriormente porque evitamos nos afogar em todos os detalhes da sintaxe da linguagem de programação.
 
-1. Create a variable 'minVal' and set it equal to the first value of the array.
-2. Go through every element in the array.
-3. If the current element has a lower value than 'minVal', update 'minVal' to this value.
-4. After looking ar all the elements in the array, the 'minVal' variable now contains the lowest value.
+1. Crie uma variável 'minVal' e defina-a igual ao primeiro valor do array.
+2. Percorra cada elemento do array.
+3. Se o elemento atual tiver um valor inferior a 'minVal', atualize 'minVal' para este valor.
+4. Depois de examinar todos os elementos do array, a variável 'minVal' agora contém o valor mais baixo.
 
-You can also write the algorithm in a way that looks more loke a programming language if you want to, like this:
+Você também pode escrever o algoritmo de uma forma que se pareça mais com uma linguagem de programação, se desejar, assim:
 
 ```
 Variable 'minVal' = array[0]
@@ -72,7 +72,7 @@ For each element in the array
         minVal = current element
 ```
 
-After we have written down the algorithm, it is much easier to implement the algorithm in a specifc programming language:
+Depois de escrevermos o algoritmo, é muito mais fácil implementá-lo em uma linguagem de programação específica:
 
 ```c
 #include <stdio.h>
@@ -93,12 +93,12 @@ int main() {
 }
 ```
 
-## Algorithm Time Complexity
+## Complexidade de tempo do algoritmo
 
-When exploring algorithms, we often look at how long time an algorithm takes to run relative to the size of the data set.
+Ao explorar algoritmos, frequentemente observamos quanto tempo um algoritmo leva para ser executado em relação ao tamanho do conjunto de dados.
 
 <center>
-    <img src="../images/arrays/img_runtime_findlowest.png" alt="Lowest value complexity">
+ <img src="../images/arrays/img_runtime_findlowest.png" alt="Mais baixo valor de complexidade">
 </center>
 
-In the example above, the time the algorithms needs to run is proportional, or linear, to the size of the data set. This is because the algorithm must visit every array element one time to find the lowest value. The loop must run 5 times since there are 5 values in the array. And if the array had 1000 values, the loop would have to run 1000 times.
+No exemplo acima, o tempo que os algoritmos precisam para ser executados é proporcional, ou linear, ao tamanho do conjunto de dados. Isso ocorre porque o algoritmo deve visitar cada elemento do array uma vez para encontrar o valor mais baixo. O loop deve ser executado 5 vezes, pois existem 5 valores no array. E se o array tivesse 1.000 valores, o loop teria que ser executado 1.000 vezes.

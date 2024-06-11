@@ -1,72 +1,72 @@
 # Selection Sort
 
-The Selection Sort algorithm finds the lowest value in an array and moves it to the front of the array.
+O algoritmo Selection Sort encontra o valor mais baixo em um array e o move para a frente do array.
 
-The algorithm looks through the array again and again, moving the next lowest values to the front, until the array is sorted.
+O algoritmo examina o array repetidas vezes, movendo os próximos valores mais baixos para a frente, até que o array seja classificado.
 
-### How it works
+### Como funciona
 
-1. Go through the array to find the lowest value.
-2. Move the lowest value to the front of the unsorted part of the array.
-3. Go through the array again as many times as there are values inthe array.
+1. Percorra o array para encontrar o valor mais baixo.
+2. Mova o valor mais baixo para a frente da parte não classificada do array.
+3. Percorra o array novamente quantas vezes houver valores no array.
 
-## Manual Run Through
+## Execução manual
 
-Before we implement the Selection Sort algorithm in a programming language, let's manually run through a short array only one time, just to get the idea.
+Antes de implementarmos o algoritmo Selection Sort em uma linguagem de programação, vamos executar manualmente um pequeno array apenas uma vez, só para ter uma ideia.
 
-**Step 1:** we start with an unsorted array.
+**Etapa 1:** começamos com um array não classificado.
 
 [7, 12, 9, 11, 3]
 
-**Step 2:** go through the array, one value at a time. Which value is the lowest? 3, right?
+**Etapa 2:** percorra o array, um valor de cada vez. Qual valor é o menor? 3, certo?
 
 [7, 12, 9, 11, `3`]
 
-**Step 3:** Move the lowest value 3 to the front of the array.
+**Etapa 3:** Mova o valor mais baixo 3 para a frente do array.
 
 [`3`, 7, 12, 9, 11]
 
-**Step 4:** look through the rest of the values, startinh with 7. 7 is the lowest value, and already at the front of the array, so we don't need to move it.
+**Etapa 4:** examine o restante dos valores, começando com 7. 7 é o valor mais baixo e já está na frente do array, então não precisamos movê-lo.
 
 [3, `7`,12, 9, 11]
 
-**Step 5:** look through the rest of the array: 12, 9 and 11. 9 is the lowest value.
+**Etapa 5:** examine o resto do array: 12, 9 e 11. 9 é o valor mais baixo.
 
 [3, 7, 12, `9`,11]
 
-**Step 6:** move 9 to the front.
+**Etapa 6:** mova 9 para a frente.
 
 [3, 7, `9`,12, 11]
 
-**Step 7:** looking at 12 and 11, 11 is the lowest.
+**Etapa 7:** olhando para 12 e 11, 11 é o mais baixo.
 
 [3, 7, 9, 12, `11`]
 
-**Step 8:** move it to the front.
+**Etapa 8:** mova-o para a frente.
 
 [3, 7, 9, `11`,12]
 
-Finally, the array is sorted.
+Finalmente, o array é classificada.
 
-## Manual Run Through: What Happened?
+## Execução manual: o que aconteceu?
 
-We must understand what happened above to fully understand the algorithm, so that we can implementthe algorithm in a programming language.
+Devemos entender o que aconteceu acima para compreender totalmente o algoritmo, para que possamos implementá-lo em uma linguagem de programação.
 
-Can you see what happened to the lowest value 3? In step 3, it has been moved to the start of the array, where it belongs, but at that step the rest of the array remains unsorted.
+Você consegue ver o que aconteceu com o valor mais baixo 3? Na etapa 3, ele foi movido para o início do array, onde pertence, mas nessa etapa o restante do array permanece sem classificação.
 
-So the Selection Sort algorithm must run through the array again and again, each time the next lowest value is moved in front of the unsorted part of the array, to its correct position. The sorting continues until the highest value 12 is left at the end of the array. This means that we need to run through the array 4 times, to sort the array of 5 values.
+Portanto, o algoritmo de classificação por seleção deve percorrer o array repetidas vezes, cada vez que o próximo valor mais baixo for movido na frente da parte não classificada do array, para sua posição correta. A classificação continua até que o valor mais alto 12 seja deixado no final do array. Isso significa que precisamos percorrer o array 4 vezes para classificar o array de 5 valores.
 
-And each time the algorithm tuns through the array, the remaining unsorted part of the array becomes shorter.
+E cada vez que o algoritmo percorre o array, a parte restante não classificada do array fica mais curta.
 
-## Selection Sort Implementation
+## Implementação de classificação por seleção
 
-To implement the Selection Sort algorithm in a programming language, we need:
+Para implementar o algoritmo Selection Sort em uma linguagem de programação, precisamos:
 
-1. An array with values to sort.
-2. An inner loop that goes through the array, finds the lowest value, and moves it to the front of the array. THis loop must loop through one less value each time it runs.
-3. An outer loop that controls how many times the inner loop must run. For an array with $\ n$ values, this outher loop must run $\ n - 1$ times.
+1. um array com valores para classificar.
+2. Um loop interno que percorre o array, encontra o valor mais baixo e o move para a frente do array. Este loop deve percorrer um valor a menos cada vez que for executado.
+3. Um loop externo que controla quantas vezes o loop interno deve ser executado. Para um array com valores $\ n$, esse loop externo deve ser executado $\ n - 1$ vezes.
 
-The resulting code looks like this:
+O código resultante fica assim:
 
 ```c
 #include <stdio.h>
@@ -101,35 +101,35 @@ int main() {
 // Output: Sorted array: 5 11 12 22 25 34 64 90
 ```
 
-## Selection Sort Shifting Problem
+## Problema de mudança de classificação de seleção
 
-The Selection Sort algorithm can be improved a little bit more.
+O algoritmo Selection Sort pode ser melhorado um pouco mais.
 
-In the code above, the lowest value element is removed, and them inserted in front of the array.
+No código acima, o elemento de menor valor é removido e inserido na frente do array.
 
-Each time the next lowest value array element is removed, all following elements must be shifted one place down to make uo for the removal.
+Cada vez que o próximo elemento do array de valor mais baixo é removido, todos os elementos seguintes devem ser deslocados uma posição para baixo para fazer uo a remoção.
 
 <center>
     <img src="../images/arrays/img_array_removed_shifting_2.png" alt="Array removed shifting">
 </center>
 
-These shifting operation takes a lot of time, and we are not even done yet! After the lowest value (5) is found and removed, it is inserted at the start of the array, causing all following values to shift one position up to make space for the new value, like the image below shows.
+Essas operações de mudança levam muito tempo e ainda nem terminamos! Após o valor mais baixo (5) ser encontrado e removido, ele é inserido no início do array, fazendo com que todos os valores seguintes se desloquem uma posição para cima para abrir espaço para o novo valor, como mostra a imagem abaixo.
 
 <center>
     <img src="../images/arrays/img_array_inserted_shifting_2.png" alt="Array inserted shifting">
 </center>
 
-## Solution: Swap Values!
+## Solução: Trocar Valores!
 
-Instead of all the shifting, swap the lowest value (5) with the first value (64) like below.
+Em vez de toda a mudança, troque o valor mais baixo (5) pelo primeiro valor (64) como abaixo.
 
 <center>
     <img src="../images/arrays/img_array_swap_noshifting_2.png" alt="Array swap shifting">
 </center>
 
-We can swap values like the image above shows because the lowest value ends up in the correct position, and it does not matter where we put the other value we are swapping with, because it is not sorted yet.
+Podemos trocar valores como mostra a imagem acima porque o valor mais baixo acaba na posição correta, e não importa onde colocamos o outro valor com o qual estamos trocando, porque ele ainda não está classificado.
 
-Here is an implementation of the improved Selection Sort, using swapping:
+Aqui está uma implementação do Selection Sort aprimorado, usando troca:
 
 ```c
 #include <stdio.h>
@@ -162,26 +162,26 @@ int main() {
 // Output: Sorted array: 5 11 12 22 25 34 64 90
 ```
 
-## Selection Sort Time Complexity
+## Complexidade do tempo de classificação da seleção
 
-Selection Sort sorts an array of $\ n$ values.
+Seleção de classificação classifica um array de valores $\ n$.
 
-On average, about $\frac{n}{2}$ elements are compared to find the lowest value in each loop.
+Em média, cerca de $\frac{n}{2}$ elementos são comparados para encontrar o valor mais baixo em cada loop.
 
-And Selection Sort must run the loop to find the lowest value approximately $\ n$ times.
+E o Selection Sort deve executar o loop para encontrar o valor mais baixo aproximadamente $\ n$ vezes.
 
-We get time complexity:
+Obtemos complexidade de tempo:
 
 $$\theta (\frac{n}{2}\cdot n) = \underline{\underline{\theta(n^2)}}$$
 
-The time complexity for the Selection Sort algorithm van be displayed in a graph like this:
+A complexidade de tempo para o algoritmo Selection Sort pode ser exibida em um gráfico como este:
 
 <center>
     <img src="../images/arrays/img_runtime_n^2.png" alt="Runtime Selection Sort">
 </center>
 
-As you can see, the run time is the same as for Bubble Sort: The run time increases really fast when the size of the array is increased.
+Como você pode ver, o tempo de execução é o mesmo do Bubble Sort: O tempo de execução aumenta muito rápido quando o tamanho do array aumenta.
 
-The most significant difference from Bubble Sort that we can notice is that best and worst case is actually almost the same for Selection Sort $\ \theta(n^2)$, but for Bubble Sort the best case runtime is only $\ \theta(n)$.
+A diferença mais significativa do Bubble Sort que podemos notar é que o melhor e o pior caso são, na verdade, quase os mesmos para o Selection Sort $\ \theta(n^2)$, mas para o Bubble Sort o tempo de execução do melhor caso é de apenas $\ \theta (n)$.
 
-The difference in best and worst case for Selection Sort is mainly the numbers of swaps. In the best case scenario Selection Sort does not have to swap any of the values because the array is already sorted. And in the worst case scenario, where the array already sorted, but in the wrong order, so Selection Sort must do as many swaps as there are values in array.
+A diferença no melhor e no pior caso para a classificação por seleção é principalmente o número de trocas. Na melhor das hipóteses, o Selection Sort não precisa trocar nenhum dos valores porque o array já está classificada. E na pior das hipóteses, onde o array já está ordenado, mas na ordem errada, então o Selection Sort deve fazer tantas trocas quantos valores houver no array.
