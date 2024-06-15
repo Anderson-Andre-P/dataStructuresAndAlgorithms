@@ -1,4 +1,4 @@
-#DSA
+# DSA
 
 Uma maneira eficiente de armazenar dados.
 
@@ -26,7 +26,7 @@ Na ciência da computação existem dois tipos diferentes de estruturas de dados
 
 **Estruturas de dados primitivas:** são estruturas de dados básicas fornecidas por linguagens de programação para representar valores únicos, como inteiros, números de ponto flutuante, caracteres e booleanos.
 
-**Estruturas de dados abstratas:** são estruturas de dados de nível superior criadas usando tipos de dados primitivos e fornecem operações mais complexas e especializadas. Alguns exemplos de estruturas de dados abstratas incluem arrays, listas vinculadas, pilhas, filas, árvores e gráficos.
+**Estruturas de dados abstratas:** são estruturas de dados de nível superior criadas usando tipos de dados primitivos e fornecem operações mais complexas e especializadas. Alguns exemplos de estruturas de dados abstratas incluem arrays, listas vinculadas, pilhas, filas, árvores e grafos.
 
 ## O que são algoritmos?
 
@@ -45,13 +45,13 @@ Exemplos de algoritmos:
 - Encontrar o trajeto mais rápido em um sistema de navegação GPS;
 - Navegar num avião ou num carro (controlo de cruzeiro);
 - Encontrar o que os usuários procuram (motor de busca);
-- Classificação, por exemplo, classificação de filmes por classificação.
+- Classificação, por exemplo, classificação de filmes por avaliações.
 
 Os algoritmos que veremos neste arquivo são projetados para resolver problemas específicos e geralmente são feitos para funcionar em estruturas de dados específicas. Por exemplo, o algoritmo "Bubble Sort" foi projetado para classificar valores e funciona em arrays.
 
 ## Estruturas de dados junto com algoritmos
 
-Estruturas de dados e algoritmos (DSA) andam de mãos dadas. Uma estrutura de dados (DS) não vale muito se você não puder pesquisá-la ou manipulá-la de forma eficiente usando algoritmos, e os algoritmos aqui contidos não valem muito sem um DS para trabalhar.
+Estruturas de dados e algoritmos (DSA) andam de mãos dadas. Uma estrutura de dados (DS) não vale muito se você não puder pesquisá-la ou manipulá-la de forma eficiente usando algoritmos, e os algoritmos aqui contidos não valem muito sem uma DS para trabalhar.
 
 DSA trata de encontrar maneiras eficientes de armazenar e recuperar dados, de realizar operações em dados e de resolver problemas específicos.
 
@@ -59,7 +59,7 @@ Ao compreender o DSA, você pode:
 
 - Decidir qual estrutura de dados ou algoritmo é melhor para determinada situação;
 - Faça programas que rodem mais rápido ou usem menos memória;
-- compreender como abordar problemas complexos e resolvê-los de forma sistemática.
+- Compreender como abordar problemas complexos e resolvê-los de forma sistemática.
 
 ## Onde o DSA é necessário?
 
@@ -67,7 +67,7 @@ Os DSA são usados ​​em praticamente todos os sistemas de software, desde si
 
 - Para gerir grandes quantidades de dados, como numa rede social ou num motor de busca;
 - Para agendar tarefas, para decidir qual tarefa um computador deve primeiro;
-- Para planejar rotas, como em um sistema GPS para encontrar o caminho mais curto de A a B;
+- Para planejar rotas, como em um sistema GPS para encontrar o caminho mais curto entre A e B;
 - Para otimizar processos, como organizar tarefas para que possam ser concluídas o mais rápido possível;
 - Para resolver problemas complexos: desde encontrar a melhor forma de embalar um caminhão até fazer um computador 'aprender' com os dados.
 
@@ -77,7 +77,7 @@ O DSA é fundamental em quase todas as partes do mundo do software:
 - Sistemas de banco de dados;
 - Aplicativos da web;
 - Aprendizado de máquina;
-- Jogos de vídeo;
+- Vídeo games;
 - Sistemas criptográficos;
 - Análise de dados;
 - Motores de busca.
@@ -90,7 +90,7 @@ Estas novas palavras e conceitos serão introduzidos e explicados adequadamente 
 
 | Prazo                   | Descrição                                                                                                                                                                                                                       |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Algoritmo               | Um conjunto de instruções passo a passo para resolver um problema específico                                                                                                                                                    |
+| Algoritmo               | Um conjunto de instruções passo a passo para resolver um problema específico.                                                                                                                                                   |
 | Estrutura de Dados (DS) | Uma forma de organizar os dados para que possam ser usados ​​com eficiência. Estruturas de dados comuns incluem arrays, listas vinculadas e árvores binárias.                                                                   |
 | Complexidade do tempo   | Uma medida da quantidade de tempo que um algoritmo leva para ser executado, dependendo da quantidade de dados em que o algoritmo está trabalhando.                                                                              |
 | Complexidade Espacial   | Uma medida da quantidade de memória que um algoritmo usa, dependendo da quantidade de dados em que o algoritmo está trabalhando.                                                                                                |

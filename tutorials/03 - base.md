@@ -2,7 +2,7 @@
 
 1. **Arrays (Vetores):**
 
-   - Arrays são coleções de elementos do mesmo tipo, armazenados em memória contígua.
+   - Arrays são coleções de elementos do mesmo tipo, armazenados em memória contínua.
    - Permitem acessar elementos através de um índice.
    - Têm tamanho fixo que é definido na declaração.
 
@@ -39,9 +39,9 @@ Neste exemplo:
 
 Esse é um exemplo básico de como usar arrays em C/C++. Eles são úteis para armazenar uma coleção de valores do mesmo tipo em uma única estrutura de dados e acessá-los por meio de índices.
 
-2. **Arrays:**
+2. **Arrays de arrays:**
 
-   - Arrays são arrays multidimensionais, ou seja, arrays de arrays.
+   - Arrays são vetores multidimensionais, ou seja, podemos criar arrays de arrays.
    - São usadas para representar tabelas de dados com duas ou mais dimensões.
    - Acesso aos elementos é feito utilizando múltiplos índices.
 
