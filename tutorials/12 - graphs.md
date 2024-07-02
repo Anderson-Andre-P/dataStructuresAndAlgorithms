@@ -1,7 +1,5 @@
 ## Graphs
 
-Claro! Vamos falar sobre grafos, uma estrutura de dados fundamental em ciência da computação e matemática discreta.
-
 Um grafo é uma estrutura composta por um conjunto de vértices (também chamados de nós) e um conjunto de arestas que conectam esses vértices. Cada aresta pode ter um peso associado, que representa alguma informação adicional sobre a relação entre os vértices que ela conecta.
 
 Os grafos são usados para modelar uma ampla variedade de problemas do mundo real, desde redes de computadores e sistemas de transporte até relacionamentos sociais e estruturas de dados em computação.

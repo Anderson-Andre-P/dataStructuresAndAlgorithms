@@ -1,7 +1,5 @@
 # Hash
 
-Claro! Vamos falar sobre hashes em estrutura de dados.
-
 **O que são Hashes?**
 Um hash é uma função que mapeia dados de tamanho variável para dados de tamanho fixo. É como uma impressão digital de um conjunto de dados. Essa função é projetada para ser rápida de calcular e geralmente é irreversível, o que significa que é difícil (idealmente impossível) regenerar os dados originais a partir do hash.
 

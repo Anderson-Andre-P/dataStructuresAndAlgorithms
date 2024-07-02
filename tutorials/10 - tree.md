@@ -1,4 +1,4 @@
-Claro! Árvores são estruturas de dados fundamentais em ciência da computação que modelam hierarquias. Elas são compostas por nós interconectados por meio de arestas. Cada nó tem um valor associado e pode ter zero ou mais nós filhos, dependendo do tipo de árvore.
+# Tree (Árvores)
 
 As árvores são amplamente utilizadas em várias áreas da computação devido à sua capacidade de representar relações hierárquicas de forma eficiente. Aqui estão algumas aplicações comuns:
 
